@@ -1,0 +1,29 @@
+{
+ "canvas_px": [
+  1200,
+  1800
+ ],
+ "design_mm": [
+  101.6,
+  152.4
+ ],
+ "ink_boxes_px": [
+  [
+   0,
+   0,
+   1198,
+   1798
+  ]
+ ],
+ "page_mm": [
+  101.6,
+  152.4
+ ],
+ "page_png": "center-7in.page1.png",
+ "page_px": [
+  1200,
+  1800
+ ],
+ "rotate_cw": 0,
+ "stock": "center-7in"
+}

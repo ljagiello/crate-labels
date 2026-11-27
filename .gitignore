@@ -1,0 +1,10 @@
+/crate-labels
+/out/
+# GoReleaser output
+/dist/
+*.test
+*.prof
+*.out
+.DS_Store
+.idea/
+.vscode/

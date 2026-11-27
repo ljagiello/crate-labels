@@ -1,0 +1,140 @@
+{
+ "choices_by_page": {
+  "15x50": {
+   "exact": false,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  },
+  "15x50 exact-only": null,
+  "4x6in": {
+   "exact": false,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  },
+  "4x6in exact-only": null,
+  "50x30": {
+   "exact": false,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  },
+  "50x30 exact-only": null,
+  "50x80": {
+   "exact": false,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  },
+  "50x80 exact-only": null,
+  "a4": null,
+  "a4 exact-only": null,
+  "letter": {
+   "exact": true,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  },
+  "letter exact-only": {
+   "exact": true,
+   "media": "215.9×279.4 mm in tray-1",
+   "media_col_members": [
+    "media-size",
+    "media-bottom-margin",
+    "media-left-margin",
+    "media-right-margin",
+    "media-top-margin",
+    "media-source"
+   ],
+   "size": [
+    21590,
+    27940
+   ],
+   "turned": false
+  }
+ },
+ "database_size": 45,
+ "default_quality": 4,
+ "formats": [
+  "application/octet-stream",
+  "image/urf",
+  "image/jpeg",
+  "image/pwg-raster"
+ ],
+ "job_page_limit": 999,
+ "label_job_ticket": [
+  "media-col",
+  "print-color-mode",
+  "print-scaling"
+ ],
+ "media": [
+  "215.9×279.4 mm in tray-1"
+ ],
+ "media_from_ready": true,
+ "name": "Brother HL-L3290CDW series",
+ "problem_when_idle": "",
+ "sendable": [
+  "image/urf",
+  "image/jpeg"
+ ],
+ "state": 3,
+ "urf_dpi_for_203": 600,
+ "urf_dpi_for_300": 600,
+ "validate_job": true
+}

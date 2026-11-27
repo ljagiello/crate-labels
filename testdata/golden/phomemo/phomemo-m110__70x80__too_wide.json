@@ -1,0 +1,33 @@
+{
+  "model": "phomemo-m110",
+  "stock": "70x80",
+  "canvas": [
+    560,
+    640
+  ],
+  "turn_cw": 0,
+  "width": 384,
+  "lane": [
+    0,
+    384
+  ],
+  "image": [
+    0,
+    100,
+    384,
+    539
+  ],
+  "rows": 640,
+  "media": 10,
+  "skip_feed": true,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m110__70x80__too_wide.job0.bin",
+      "bytes": 30743,
+      "rows": 640,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m110__70x80__too_wide.preview.pgm"
+}

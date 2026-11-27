@@ -1,0 +1,56 @@
+{
+ "canvas_px": [
+  614,
+  307
+ ],
+ "capacity": 44,
+ "default_crop_marks": true,
+ "design_mm": [
+  52,
+  26
+ ],
+ "grid": {
+  "cell_mm": [
+   52,
+   26
+  ],
+  "cols": 4,
+  "margin_mm": [
+   1,
+   5.5
+  ],
+  "pitch_mm": [
+   52,
+   26
+  ],
+  "rows": 11,
+  "uncut": true
+ },
+ "marks_png": "test-uncut-edge.marks-only.png",
+ "page2_ink_boxes_px": [
+  [
+   12,
+   65,
+   624,
+   370
+  ]
+ ],
+ "page_mm": [
+  210,
+  297
+ ],
+ "page_png": "test-uncut-edge.full-page.png",
+ "page_px": [
+  2480,
+  3508
+ ],
+ "pages_for": {
+  "1": 1,
+  "132": 3,
+  "44": 1,
+  "45": 2
+ },
+ "rotate_cw": 0,
+ "stock": "test-uncut-edge",
+ "trim_mark_boxes_px": null
+}

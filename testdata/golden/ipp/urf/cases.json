@@ -1,0 +1,120 @@
+[
+ {
+  "inputs": [
+   "ipp/urf/row-2x2-identical.p1.png"
+  ],
+  "name": "row-2x2-identical",
+  "note": "two equal lines share one line repetition count",
+  "urf": "ipp/urf/row-2x2-identical.urf",
+  "urf_length": 48
+ },
+ {
+  "inputs": [
+   "ipp/urf/row-2x2-distinct.p1.png"
+  ],
+  "name": "row-2x2-distinct",
+  "note": "two different lines",
+  "urf": "ipp/urf/row-2x2-distinct.urf",
+  "urf_length": 51
+ },
+ {
+  "inputs": [
+   "ipp/urf/row-isolated-pixel.p1.png"
+  ],
+  "name": "row-isolated-pixel",
+  "note": "one dark pixel between white ones",
+  "urf": "ipp/urf/row-isolated-pixel.urf",
+  "urf_length": 49
+ },
+ {
+  "inputs": [
+   "ipp/urf/row-literal-then-run.p1.png"
+  ],
+  "name": "row-literal-then-run",
+  "note": "a literal followed by a run of three",
+  "urf": "ipp/urf/row-literal-then-run.urf",
+  "urf_length": 50
+ },
+ {
+  "inputs": [
+   "ipp/urf/row-run-130.p1.png"
+  ],
+  "name": "row-run-130",
+  "note": "a run longer than one repeat code holds",
+  "urf": "ipp/urf/row-run-130.urf",
+  "urf_length": 49
+ },
+ {
+  "inputs": [
+   "ipp/urf/row-alternating-130.p1.png"
+  ],
+  "name": "row-alternating-130",
+  "note": "a literal longer than one literal code holds",
+  "urf": "ipp/urf/row-alternating-130.urf",
+  "urf_length": 177
+ },
+ {
+  "inputs": [
+   "ipp/urf/doc-8x2.p1.png"
+  ],
+  "name": "doc-8x2",
+  "note": "a small two-line page",
+  "urf": "ipp/urf/doc-8x2.urf",
+  "urf_length": 59
+ },
+ {
+  "inputs": [
+   "ipp/urf/doc-two-pages-203dpi-q5.p1.png",
+   "ipp/urf/doc-two-pages-203dpi-q5.p2.png"
+  ],
+  "name": "doc-two-pages-203dpi-q5",
+  "note": "two pages, 203 dpi, high quality",
+  "urf": "ipp/urf/doc-two-pages-203dpi-q5.urf",
+  "urf_length": 86
+ },
+ {
+  "inputs": [
+   "ipp/urf/line-repeat-cap-1x300.p1.png"
+  ],
+  "name": "line-repeat-cap-1x300",
+  "note": "300 equal lines need two repetition counts (256 + 44)",
+  "urf": "ipp/urf/line-repeat-cap-1x300.urf",
+  "urf_length": 50
+ },
+ {
+  "inputs": [
+   "ipp/urf/noise-64x48.p1.png"
+  ],
+  "name": "noise-64x48",
+  "note": "random grey",
+  "urf": "ipp/urf/noise-64x48.urf",
+  "urf_length": 3212
+ },
+ {
+  "inputs": [
+   "ipp/urf/binary-200x50.p1.png"
+  ],
+  "name": "binary-200x50",
+  "note": "random black and white",
+  "urf": "ipp/urf/binary-200x50.urf",
+  "urf_length": 8473
+ },
+ {
+  "inputs": [
+   "ipp/urf/sparse-runs-300x40.p1.png"
+  ],
+  "name": "sparse-runs-300x40",
+  "note": "long runs mixed with short ones",
+  "urf": "ipp/urf/sparse-runs-300x40.urf",
+  "urf_length": 6940
+ },
+ {
+  "inputs": [
+   "built by the test"
+  ],
+  "name": "letter-600dpi-centred-label",
+  "note": "a 2×2 label at actual size on Letter at 600 dpi (built by Place)",
+  "urf": "ipp/urf/letter-600dpi-centred-label.urf",
+  "urf_length": 2233
+ }
+]

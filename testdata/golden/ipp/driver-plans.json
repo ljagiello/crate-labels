@@ -1,0 +1,243 @@
+{
+ "15x50": {
+  "canvas_px": [
+   591,
+   142
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   2407,
+   2709,
+   2691,
+   3891
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "40x30": {
+  "canvas_px": [
+   472,
+   354
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   2078,
+   2946,
+   3022,
+   3654
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "4x6": {
+  "canvas_px": [
+   1200,
+   1800
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   1350,
+   1500,
+   3750,
+   5100
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "50x30": {
+  "canvas_px": [
+   567,
+   354
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   1983,
+   2946,
+   3117,
+   3654
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "50x80-two-track": {
+  "canvas_px": [
+   945,
+   567
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   1983,
+   2355,
+   3117,
+   4245
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "70x80": {
+  "canvas_px": [
+   827,
+   945
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   1723,
+   2355,
+   3377,
+   4245
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "avery-5160": {
+  "canvas_px": [
+   788,
+   300
+  ],
+  "dpi": 600,
+  "exact": true,
+  "format": "image/urf",
+  "ink_px": [
+   112,
+   300,
+   1688,
+   900
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "avery-5163": {
+  "canvas_px": [
+   1200,
+   600
+  ],
+  "dpi": 600,
+  "exact": true,
+  "format": "image/urf",
+  "ink_px": [
+   94,
+   300,
+   2494,
+   1500
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "center-7in": {
+  "canvas_px": [
+   1200,
+   1800
+  ],
+  "dpi": 600,
+  "exact": false,
+  "format": "image/urf",
+  "ink_px": [
+   1350,
+   1500,
+   3750,
+   5100
+  ],
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "letter-uncut-50x30": {
+  "canvas_px": [
+   567,
+   354
+  ],
+  "dpi": 600,
+  "exact": true,
+  "format": "image/urf",
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ },
+ "letter-uncut-50x80": {
+  "canvas_px": [
+   945,
+   567
+  ],
+  "dpi": 600,
+  "exact": true,
+  "format": "image/urf",
+  "media": "215.9×279.4 mm in tray-1",
+  "page_dpi": 600,
+  "page_px": [
+   5100,
+   6600
+  ],
+  "page_quality": 4,
+  "turned": false
+ }
+}

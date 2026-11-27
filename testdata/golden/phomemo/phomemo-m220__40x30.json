@@ -1,0 +1,33 @@
+{
+  "model": "phomemo-m220",
+  "stock": "40x30",
+  "canvas": [
+    320,
+    240
+  ],
+  "turn_cw": 0,
+  "width": 560,
+  "lane": [
+    240,
+    320
+  ],
+  "image": [
+    240,
+    0,
+    560,
+    240
+  ],
+  "rows": 240,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m220__40x30.job0.bin",
+      "bytes": 16827,
+      "rows": 240,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m220__40x30.preview.pgm"
+}

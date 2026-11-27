@@ -1,0 +1,36 @@
+{
+  "model": "phomemo-m220",
+  "stock": "50x30",
+  "settings": {
+    "offset_dots": 10
+  },
+  "canvas": [
+    384,
+    240
+  ],
+  "turn_cw": 0,
+  "width": 560,
+  "lane": [
+    10,
+    384
+  ],
+  "image": [
+    10,
+    0,
+    394,
+    240
+  ],
+  "rows": 240,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m220__50x30__offset10.job0.bin",
+      "bytes": 16827,
+      "rows": 240,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m220__50x30__offset10.preview.pgm"
+}

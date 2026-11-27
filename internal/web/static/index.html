@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>crate-labels</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23c4006a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css">
+  <script>
+    try {
+      const t = localStorage.getItem("crate-labels.theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (_) { /* private mode */ }
+  </script>
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true"></span>crate-labels</a>
+    <nav class="tabs" aria-label="Pages">
+      <a href="#/" data-page="labels">Labels</a>
+      <a href="#/printers" data-page="printers">Printers</a>
+      <a href="#/settings" data-page="settings">Settings</a>
+    </nav>
+    <div class="account" id="account"></div>
+    <button id="theme-toggle" class="icon-btn" type="button" title="Switch light / dark">
+      <span aria-hidden="true">◐</span><span class="sr-only">Switch light or dark theme</span>
+    </button>
+  </header>
+
+  <!-- Labels: find on the left, the label in the middle, printing on the right -->
+  <main id="page-labels" class="page labels">
+    <section class="pane pane-left" aria-label="Find records">
+      <form id="find" class="find" autocomplete="off">
+        <label for="q" class="sr-only">Discogs link, release id or search words</label>
+        <input id="q" type="search" placeholder="Paste a Discogs link or search" spellcheck="false">
+        <div class="find-row">
+          <label for="find-by" class="sr-only">Search by</label>
+          <select id="find-by">
+            <option value="q">Anything</option>
+            <option value="catno">Catalogue number</option>
+            <option value="barcode">Barcode</option>
+            <option value="label">Record label</option>
+            <option value="artist">Artist</option>
+          </select>
+          <label class="field inline"><input id="find-vinyl" type="checkbox" checked><span>Vinyl only</span></label>
+        </div>
+        <p class="hint"><kbd>/</kbd> to search, <kbd>⌘V</kbd> anywhere to paste a link</p>
+      </form>
+      <div class="segmented" role="tablist" aria-label="Lists">
+        <button type="button" role="tab" data-left="results" aria-selected="true">Results</button>
+        <button type="button" role="tab" data-left="collection" aria-selected="false">Collection</button>
+        <button type="button" role="tab" data-left="crates" aria-selected="false">Crates</button>
+      </div>
+      <div id="left-body" class="list" role="tabpanel"></div>
+    </section>
+
+    <section class="pane pane-centre" aria-label="Label">
+      <div class="design-bar" id="design-bar">
+        <label class="field grow"><span>Template</span><select id="template"></select></label>
+        <label class="field grow"><span>Label stock</span><select id="stock"></select></label>
+        <div class="options" id="options"></div>
+      </div>
+      <div class="bench" id="bench">
+        <div class="bench-empty" id="bench-empty">
+          <strong>Paste a Discogs link</strong>
+          Or search on the left. The label shows here exactly as the printer will burn it.
+        </div>
+        <figure class="stage sample" id="stage" aria-live="polite">
+          <img id="preview" alt="Label preview">
+          <svg class="marks" id="marks" aria-hidden="true"></svg>
+        </figure>
+        <p class="bench-status" id="bench-status" role="status"></p>
+        <div class="bench-zoom">
+          <button class="btn small" type="button" data-zoom="fit" aria-pressed="true">Fit</button>
+          <button class="btn small" type="button" data-zoom="1">1:1 dots</button>
+        </div>
+      </div>
+      <div class="editor" id="editor"></div>
+    </section>
+
+    <aside class="pane pane-right" aria-label="Print">
+      <div class="print-box">
+        <label class="field"><span>Printer</span><select id="printer"></select></label>
+        <div class="pair">
+          <button class="btn primary print-go" id="print" type="button">Print label <kbd>⌘P</kbd></button>
+          <label class="field"><span class="sr-only">Copies</span><input id="copies" type="number" min="1" max="99" value="1" title="Copies" aria-label="Copies"></label>
+        </div>
+        <p class="print-note" id="print-note"></p>
+      </div>
+      <section class="side-section" aria-labelledby="queue-h">
+        <h2 id="queue-h">Queue <small id="queue-count"></small></h2>
+        <ol class="side-list" id="jobs" aria-live="polite"></ol>
+      </section>
+      <section class="side-section" aria-labelledby="history-h">
+        <h2 id="history-h">Printed <small id="labels-printed"></small></h2>
+        <ol class="side-list" id="history"></ol>
+      </section>
+    </aside>
+  </main>
+
+  <main id="page-printers" class="page sheet" hidden>
+    <div class="sheet-inner">
+      <div>
+        <h1>Printers</h1>
+        <p class="lede">Save each printer once. Calibration values apply to every label sent to it; print the test pattern after changing them.</p>
+      </div>
+      <section class="block" aria-labelledby="saved-h">
+        <h2 id="saved-h">Your printers</h2>
+        <div id="saved-printers"></div>
+      </section>
+      <section aria-labelledby="add-h" style="display:grid;gap:12px">
+        <h2 id="add-h">Add a printer</h2>
+        <div class="add-grid">
+          <div class="block">
+            <h2>Bluetooth</h2>
+            <p class="status-line">Switch the printer on and disconnect it from your phone first.</p>
+            <div class="token-row">
+              <button class="btn" type="button" id="ble-scan">Scan for 6 seconds</button>
+              <label class="field inline"><input type="checkbox" id="ble-all"><span>Show every device</span></label>
+            </div>
+            <ul class="found" id="ble-found"></ul>
+          </div>
+          <div class="block">
+            <h2>Wi-Fi</h2>
+            <p class="status-line">Label and sheet printers that speak IPP / AirPrint on this network.</p>
+            <div><button class="btn" type="button" id="ipp-scan">Look for printers</button></div>
+            <ul class="found" id="ipp-found"></ul>
+          </div>
+          <div class="block">
+            <h2>This Mac</h2>
+            <p class="status-line">Any printer macOS already has a driver for.</p>
+            <div><button class="btn" type="button" id="cups-scan">List macOS printers</button></div>
+            <ul class="found" id="cups-found"></ul>
+          </div>
+          <div class="block">
+            <h2>By hand</h2>
+            <form class="manual" id="manual-add">
+              <label class="field w2"><span>Model</span><select id="manual-model" required></select></label>
+              <label class="field w2"><span>Address (Bluetooth id, ipp:// URI, CUPS queue or file path)</span><input id="manual-address" type="text" spellcheck="false"></label>
+              <label class="field"><span>Name</span><input id="manual-name" type="text" required></label>
+              <div style="display:flex;align-items:end"><button class="btn primary" type="submit">Save printer</button></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <main id="page-settings" class="page sheet" hidden>
+    <div class="sheet-inner">
+      <h1>Settings</h1>
+      <section class="block" aria-labelledby="discogs-h">
+        <h2 id="discogs-h">Discogs</h2>
+        <p class="lede">crate-labels looks records up with your own personal access token. It is kept in the macOS Keychain and only ever sent to api.discogs.com. Create one at <a href="https://www.discogs.com/settings/developers" target="_blank" rel="noopener">discogs.com/settings/developers</a>.</p>
+        <p class="status-line" id="token-status"></p>
+        <form class="token-row" id="token-form" autocomplete="off">
+          <label for="token" class="sr-only">Personal access token</label>
+          <input id="token" type="password" placeholder="Paste your personal access token" spellcheck="false">
+          <button class="btn primary" type="submit">Save and test</button>
+          <button class="btn" type="button" id="token-test">Test</button>
+          <button class="btn danger" type="button" id="token-clear">Remove</button>
+        </form>
+        <label class="field inline"><input type="checkbox" id="prefer-anv"><span>Print artist names as credited on the release (Discogs name variations)</span></label>
+      </section>
+      <section class="block" aria-labelledby="prefs-h">
+        <h2 id="prefs-h">Appearance</h2>
+        <label class="field" style="max-width:240px"><span>Theme</span>
+          <select id="theme-select">
+            <option value="auto">Follow macOS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
+      </section>
+      <section class="block" aria-labelledby="about-h">
+        <h2 id="about-h">This install</h2>
+        <dl class="facts" id="facts"></dl>
+      </section>
+    </div>
+  </main>
+
+  <div id="toasts" aria-live="assertive"></div>
+</body>
+</html>

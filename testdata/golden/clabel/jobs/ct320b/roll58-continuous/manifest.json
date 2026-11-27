@@ -1,0 +1,59 @@
+{
+ "what": "clabel-ct320b on roll58-continuous",
+ "model": {
+  "id": "clabel-ct320b",
+  "dpi": 203.2,
+  "head_dots": 576,
+  "options": {
+   "fixed_edge_mm": 3,
+   "speed": 1,
+   "write_settings": true
+  },
+  "chunk_bytes": 238,
+  "chunk_gap_ms": 5
+ },
+ "stock": {
+  "id": "roll58-continuous",
+  "media": "continuous",
+  "design_mm": [
+   48,
+   200
+  ],
+  "feed_mm": [
+   58,
+   null
+  ],
+  "rotate_cw": 0
+ },
+ "settings": {},
+ "input": "input.png",
+ "preview": "preview.png",
+ "canvas": {
+  "Width": 384,
+  "Height": 1600,
+  "DPI": 203.2
+ },
+ "layout": {
+  "WidthDots": 576,
+  "ContentDots": 384,
+  "OffsetDots": 16,
+  "Rows": 0
+ },
+ "rated_dpi": 203,
+ "pages": [
+  {
+   "text": "page-01.txt",
+   "raster": "page-01-raster.bin",
+   "rows": 800,
+   "paper": 1,
+   "print_ms": 3900
+  },
+  {
+   "text": "page-02.txt",
+   "raster": "page-02-raster.bin",
+   "rows": 800,
+   "paper": 1,
+   "print_ms": 3900
+  }
+ ]
+}

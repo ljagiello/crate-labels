@@ -1,0 +1,67 @@
+# Munbyn (BLE service ABF0) and Clabel (the Microchip/ISSC transparent UART service).
+#
+# name_patterns are case-insensitive regular expressions for the advertised name; the
+# built-in ones find the model number at the start of the name or after any character
+# that is not a letter or digit. They are a fallback after the advertised service UUID;
+# the UART service is common to many devices, so a Clabel is only recognised with a
+# matching name.
+
+[[model]]
+id = "munbyn-fm226"
+label = "Munbyn FM226"
+family = "munbyn"
+link = "ble"
+dpi = 203.2
+head_dots = 384
+paper_width_mm = [20, 58]
+stocks = ["50x80-two-track", "50x30", "40x30"]
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])fm226']
+service = "0000abf0-0000-1000-8000-00805f9b34fb"
+write = { command = "0000abf1-0000-1000-8000-00805f9b34fb", image = "0000abf4-0000-1000-8000-00805f9b34fb" }
+notify = "0000abf3-0000-1000-8000-00805f9b34fb"
+chunk_bytes = 128
+chunk_gap_ms = 0
+
+[[model]]
+id = "clabel-ct230b"
+label = "Clabel CT-230B"
+family = "clabel"
+link = "ble"
+dpi = 300
+head_dots = 568
+paper_width_mm = [20, 58]
+stocks = ["50x80-two-track", "50x30", "40x30"]
+# TSPL SPEED 2; the label's fixed edge is flush with the head; its settings can be read
+# but not written.
+options = { speed = 2, fixed_edge_mm = 0.0, write_settings = false, setup_hint = "hold the CT-230B's power and feed buttons down together until it switches to gap (label) mode." }
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])ct-?230b']
+service = "49535343-fe7d-4ae5-8fa9-9fafd205e455"
+write = { data = "49535343-8841-43f4-a8d4-ecbe34729bb3" }
+notify = "49535343-1e4d-4bd9-ba61-23c647249616"
+chunk_bytes = 200
+chunk_gap_ms = 5
+
+[[model]]
+id = "clabel-ct320b"
+label = "Clabel CT-320B"
+family = "clabel"
+link = "ble"
+dpi = 203.2
+head_dots = 576
+paper_width_mm = [20, 80]
+stocks = ["50x80-two-track", "50x30", "40x30", "70x80"]
+# TSPL SPEED 1; the label's fixed edge sits 3 mm outside the head; the driver sets its
+# command language to TSPL and its paper type to gap before printing.
+options = { speed = 1, fixed_edge_mm = 3.0, write_settings = true, setup_hint = "in the CT-320B's menu, choose TSPL as the command language and gap as the paper type." }
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])ct-?320b']
+service = "49535343-fe7d-4ae5-8fa9-9fafd205e455"
+write = { data = "49535343-8841-43f4-a8d4-ecbe34729bb3" }
+notify = "49535343-1e4d-4bd9-ba61-23c647249616"
+chunk_bytes = 238
+chunk_gap_ms = 5

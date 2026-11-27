@@ -1,0 +1,203 @@
+{
+ "window_bits": 11,
+ "lookahead_bits": 4,
+ "min_length": 3,
+ "cases": [
+  {
+   "name": "f00f",
+   "input": "f00f.in.bin",
+   "encoded": "f00f.hs.bin",
+   "input_len": 2,
+   "encoded_len": 3,
+   "what": "two bytes, no repeat: literals only"
+  },
+  {
+   "name": "abab",
+   "input": "abab.in.bin",
+   "encoded": "abab.hs.bin",
+   "input_len": 4,
+   "encoded_len": 5,
+   "what": "a 2-byte repeat: below the 3-byte minimum, so literals"
+  },
+  {
+   "name": "a-x8",
+   "input": "a-x8.in.bin",
+   "encoded": "a-x8.hs.bin",
+   "input_len": 8,
+   "encoded_len": 4,
+   "what": "one byte repeated: an overlapping copy at distance 1"
+  },
+  {
+   "name": "ff-00-rows",
+   "input": "ff-00-rows.in.bin",
+   "encoded": "ff-00-rows.hs.bin",
+   "input_len": 96,
+   "encoded_len": 15,
+   "what": "48 bytes of ff then 48 of 00, two raster rows at 384 dots"
+  },
+  {
+   "name": "zeros-3840",
+   "input": "zeros-3840.in.bin",
+   "encoded": "zeros-3840.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 482,
+   "what": "a blank 384x80 section"
+  },
+  {
+   "name": "empty",
+   "input": "empty.in.bin",
+   "encoded": "empty.hs.bin",
+   "input_len": 0,
+   "encoded_len": 0,
+   "what": "empty input gives an empty stream"
+  },
+  {
+   "name": "one-byte",
+   "input": "one-byte.in.bin",
+   "encoded": "one-byte.hs.bin",
+   "input_len": 1,
+   "encoded_len": 2,
+   "what": "a single literal and 7 pad bits"
+  },
+  {
+   "name": "ff-3840",
+   "input": "ff-3840.in.bin",
+   "encoded": "ff-3840.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 482,
+   "what": "an all-black 384x80 section"
+  },
+  {
+   "name": "random-3840",
+   "input": "random-3840.in.bin",
+   "encoded": "random-3840.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 4319,
+   "what": "uniform random bytes: almost all literals"
+  },
+  {
+   "name": "alphabet4-3000",
+   "input": "alphabet4-3000.in.bin",
+   "encoded": "alphabet4-3000.hs.bin",
+   "input_len": 3000,
+   "encoded_len": 1208,
+   "what": "random over 4 symbols: many short matches"
+  },
+  {
+   "name": "aa55-1000",
+   "input": "aa55-1000.in.bin",
+   "encoded": "aa55-1000.hs.bin",
+   "input_len": 1000,
+   "encoded_len": 129,
+   "what": "period-2 repetition"
+  },
+  {
+   "name": "runs-mixed",
+   "input": "runs-mixed.in.bin",
+   "encoded": "runs-mixed.hs.bin",
+   "input_len": 2423,
+   "encoded_len": 322,
+   "what": "runs of 1-39 bytes of 00/ff/aa/55"
+  },
+  {
+   "name": "window-2048",
+   "input": "window-2048.in.bin",
+   "encoded": "window-2048.hs.bin",
+   "input_len": 2064,
+   "encoded_len": 2300,
+   "what": "a 16-byte marker repeated exactly 2048 bytes later: the farthest reachable distance"
+  },
+  {
+   "name": "window-2049",
+   "input": "window-2049.in.bin",
+   "encoded": "window-2049.hs.bin",
+   "input_len": 2065,
+   "encoded_len": 2317,
+   "what": "the same marker 2049 bytes later: out of reach"
+  },
+  {
+   "name": "tie-nearest",
+   "input": "tie-nearest.in.bin",
+   "encoded": "tie-nearest.hs.bin",
+   "input_len": 8,
+   "encoded_len": 9,
+   "what": "two equally long earlier matches"
+  },
+  {
+   "name": "label-two-track-section-01",
+   "input": "label-two-track-section-01.in.bin",
+   "encoded": "label-two-track-section-01.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 817,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-02",
+   "input": "label-two-track-section-02.in.bin",
+   "encoded": "label-two-track-section-02.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 2146,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-03",
+   "input": "label-two-track-section-03.in.bin",
+   "encoded": "label-two-track-section-03.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 2382,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-04",
+   "input": "label-two-track-section-04.in.bin",
+   "encoded": "label-two-track-section-04.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 1904,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-05",
+   "input": "label-two-track-section-05.in.bin",
+   "encoded": "label-two-track-section-05.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 1773,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-06",
+   "input": "label-two-track-section-06.in.bin",
+   "encoded": "label-two-track-section-06.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 2197,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-07",
+   "input": "label-two-track-section-07.in.bin",
+   "encoded": "label-two-track-section-07.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 2111,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  },
+  {
+   "name": "label-two-track-section-08",
+   "input": "label-two-track-section-08.in.bin",
+   "encoded": "label-two-track-section-08.hs.bin",
+   "input_len": 3840,
+   "encoded_len": 1237,
+   "what": "rows of a dithered 50x80 label, one 3840-byte section"
+  }
+ ],
+ "decode_cases": [
+  {
+   "encoded": "0003",
+   "decoded": "00000000",
+   "what": "a back-reference before the start reads the decoder's zero-filled window"
+  },
+  {
+   "encoded": "a0",
+   "decoded": "",
+   "what": "a literal tag with too few bits after it is padding"
+  }
+ ]
+}

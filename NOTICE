@@ -1,0 +1,88 @@
+crate-labels
+Copyright 2026 The crate-labels Authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It includes the third-party material listed below, each under its own terms.
+
+===============================================================================
+heatshrink decoder (internal/heatshrink/decoder.go)
+===============================================================================
+
+A port of heatshrink_decoder.c from https://github.com/atomicobject/heatshrink,
+used under the ISC licence:
+
+  Copyright (c) 2013-2015, Scott Vokes <vokes.s@gmail.com>
+  All rights reserved.
+
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted, provided that the above
+  copyright notice and this permission notice appear in all copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+===============================================================================
+Fonts (internal/layout/fonts/)
+===============================================================================
+
+These fonts are embedded in the binary and licensed under the SIL Open Font
+License, Version 1.1. Each family's full licence text sits next to its font
+files in internal/layout/fonts/, and in licenses/fonts/ in release archives.
+
+  IBM Plex Sans Condensed (plexcond_*.ttf; plexcond_ofl.txt)
+    Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+
+  IBM Plex Mono (plexmono_*.ttf; plexmono_ofl.txt)
+    Copyright © 2017 IBM Corp. with Reserved Font Name "Plex"
+
+  Atkinson Hyperlegible (atkinson_*.ttf; atkinson_ofl.txt)
+    Copyright 2020 Braille Institute of America, Inc.
+
+  Enriqueta (enriqueta_*.ttf; enriqueta_ofl.txt)
+    Copyright (c) 2011, FontFuror (info@fontfuror.com), with Reserved Font Names
+    "Enriqueta" and "Enriqueta Pro"
+
+  Sources and checksums: internal/layout/fonts/SOURCES.md.
+
+===============================================================================
+Discogs data (testdata/discogs/)
+===============================================================================
+
+The test fixtures are recorded responses from the Discogs API
+(https://www.discogs.com/developers). Discogs publishes its release data under
+CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). The
+fixtures contain image URLs but no images.
+
+crate-labels uses the Discogs API but is not affiliated with or endorsed by
+Discogs.
+
+===============================================================================
+Go modules in release binaries
+===============================================================================
+
+Release binaries are statically linked with the Go standard library and runtime
+(BSD-3-Clause, https://go.dev/LICENSE) and with these modules, at the versions
+in go.mod. Each module's licence text is in its source repository.
+
+  BSD-3-Clause
+    github.com/google/uuid               github.com/miekg/dns
+    github.com/remyoudompheng/bigfft     golang.org/x/image
+    golang.org/x/net                     golang.org/x/sys
+    golang.org/x/text                    modernc.org/libc
+    modernc.org/mathutil                 modernc.org/memory
+    modernc.org/sqlite (a translation of SQLite, which is in the public domain)
+    rsc.io/qr                            tinygo.org/x/bluetooth
+
+  MIT
+    github.com/BurntSushi/toml           github.com/cenkalti/backoff
+    github.com/dustin/go-humanize        github.com/grandcat/zeroconf
+    github.com/mattn/go-isatty           github.com/ncruces/go-strftime
+    github.com/sirupsen/logrus
+
+  Apache-2.0
+    github.com/tinygo-org/cbgo

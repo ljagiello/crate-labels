@@ -1,0 +1,33 @@
+{
+  "model": "phomemo-d30",
+  "stock": "15x50",
+  "canvas": [
+    400,
+    96
+  ],
+  "turn_cw": 90,
+  "width": 96,
+  "lane": [
+    0,
+    96
+  ],
+  "image": [
+    0,
+    0,
+    96,
+    400
+  ],
+  "rows": 400,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-d30__15x50.job0.bin",
+      "bytes": 4827,
+      "rows": 400,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-d30__15x50.preview.pgm"
+}

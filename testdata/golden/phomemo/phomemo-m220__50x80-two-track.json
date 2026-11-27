@@ -1,0 +1,33 @@
+{
+  "model": "phomemo-m220",
+  "stock": "50x80-two-track",
+  "canvas": [
+    640,
+    384
+  ],
+  "turn_cw": 90,
+  "width": 560,
+  "lane": [
+    176,
+    384
+  ],
+  "image": [
+    176,
+    0,
+    560,
+    640
+  ],
+  "rows": 640,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m220__50x80-two-track.job0.bin",
+      "bytes": 44827,
+      "rows": 640,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m220__50x80-two-track.preview.pgm"
+}

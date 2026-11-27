@@ -1,0 +1,436 @@
+{
+ "crc8": [
+  {
+   "hex": "313233343536373839",
+   "crc8": 244
+  },
+  {
+   "hex": "",
+   "crc8": 0
+  },
+  {
+   "hex": "00",
+   "crc8": 0
+  },
+  {
+   "hex": "ff",
+   "crc8": 243
+  },
+  {
+   "hex": "0005040000",
+   "crc8": 229
+  },
+  {
+   "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+   "crc8": 20
+  }
+ ],
+ "frames": [
+  {
+   "name": "identity_query",
+   "function": 5,
+   "sub": 4,
+   "content": "",
+   "frame": "dd0005040000e5dd",
+   "crc8": 229
+  },
+  {
+   "name": "read_paper_type",
+   "function": 5,
+   "sub": 17,
+   "content": "",
+   "frame": "dd000511000087dd",
+   "crc8": 135
+  },
+  {
+   "name": "read_language",
+   "function": 5,
+   "sub": 43,
+   "content": "",
+   "frame": "dd00052b0000e1dd",
+   "crc8": 225
+  },
+  {
+   "name": "write_paper_type_gap",
+   "function": 5,
+   "sub": 17,
+   "content": "00",
+   "frame": "dd00051100010089dd",
+   "crc8": 137
+  },
+  {
+   "name": "write_paper_type_continuous",
+   "function": 5,
+   "sub": 17,
+   "content": "01",
+   "frame": "dd0005110001018edd",
+   "crc8": 142
+  },
+  {
+   "name": "write_language_tspl",
+   "function": 5,
+   "sub": 43,
+   "content": "00",
+   "frame": "dd00052b000100bcdd",
+   "crc8": 188
+  }
+ ],
+ "replies": [
+  {
+   "frame": "dd000591000100b8dd",
+   "reply": {
+    "kind": "setting",
+    "setting": 17,
+    "value": 0
+   },
+   "what": "PAPER_TYPE is gap"
+  },
+  {
+   "frame": "dd00059100008cdd",
+   "reply": {
+    "kind": "setting",
+    "setting": 17,
+    "value": null
+   },
+   "what": "PAPER_TYPE has no value"
+  },
+  {
+   "frame": "dd0005ab0001008ddd",
+   "reply": {
+    "kind": "setting",
+    "setting": 43,
+    "value": 0
+   },
+   "what": "LANGUAGE is TSPL"
+  },
+  {
+   "frame": "dd0001810001054bdd",
+   "reply": {
+    "kind": "status",
+    "status": 5,
+    "conditions": [
+     "lid-open",
+     "no-paper"
+    ]
+   },
+   "what": "status: lid open and no paper"
+  },
+  {
+   "frame": "dd000584000e43542d333230420056312e302e32e4dd",
+   "reply": {
+    "kind": "identity",
+    "fields": [
+     "CT-320B",
+     "V1.0.2"
+    ],
+    "firmware": "V1.0.2"
+   },
+   "what": "identity with model and firmware"
+  },
+  {
+   "function": 5,
+   "sub": 146,
+   "content": "",
+   "reply": {
+    "kind": "other"
+   },
+   "what": "a reply for an unknown setting"
+  },
+  {
+   "function": 5,
+   "sub": 145,
+   "content": "0001",
+   "reply": {
+    "kind": "other"
+   },
+   "what": "a setting reply with two bytes"
+  },
+  {
+   "function": 1,
+   "sub": 129,
+   "content": "",
+   "reply": {
+    "kind": "other"
+   },
+   "what": "a status reply without its byte"
+  },
+  {
+   "function": 5,
+   "sub": 132,
+   "content": "76656e646f720056657273696f6e00563200435432333042",
+   "reply": {
+    "kind": "identity",
+    "fields": [
+     "vendor",
+     "Version",
+     "V2",
+     "CT230B"
+    ],
+    "firmware": "V2"
+   },
+   "what": "identity: a field named Version is not a version"
+  },
+  {
+   "function": 1,
+   "sub": 129,
+   "content": "80",
+   "reply": {
+    "kind": "status",
+    "status": 128,
+    "conditions": [
+     "head-hot"
+    ]
+   },
+   "what": "status: head too hot"
+  },
+  {
+   "function": 5,
+   "sub": 17,
+   "content": "00",
+   "reply": {
+    "kind": "other"
+   },
+   "what": "a frame without the answer bit is not a reply"
+  },
+  {
+   "function": 5,
+   "sub": 132,
+   "content": "",
+   "reply": {
+    "kind": "identity",
+    "fields": [],
+    "firmware": ""
+   },
+   "what": "an empty identity"
+  }
+ ],
+ "reassembler": [
+  {
+   "chunks": [
+    "dd000591000100b8dddd00059100008cdddd0005ab0001008ddddd0001810001054bdddd000584000e43542d333230420056312e302e32e4dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    },
+    {
+     "function": 5,
+     "sub": 145,
+     "content": ""
+    },
+    {
+     "function": 5,
+     "sub": 171,
+     "content": "00"
+    },
+    {
+     "function": 1,
+     "sub": 129,
+     "content": "05"
+    },
+    {
+     "function": 5,
+     "sub": 132,
+     "content": "43542d333230420056312e302e32"
+    }
+   ],
+   "what": "five frames in one notification"
+  },
+  {
+   "chunks": [
+    "dd0005",
+    "910001",
+    "00b8dd",
+    "dd0005",
+    "910000",
+    "8cdddd",
+    "0005ab",
+    "000100",
+    "8ddddd",
+    "000181",
+    "000105",
+    "4bdddd",
+    "000584",
+    "000e43",
+    "542d33",
+    "323042",
+    "005631",
+    "2e302e",
+    "32e4dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    },
+    {
+     "function": 5,
+     "sub": 145,
+     "content": ""
+    },
+    {
+     "function": 5,
+     "sub": 171,
+     "content": "00"
+    },
+    {
+     "function": 1,
+     "sub": 129,
+     "content": "05"
+    },
+    {
+     "function": 5,
+     "sub": 132,
+     "content": "43542d333230420056312e302e32"
+    }
+   ],
+   "what": "the same in 3-byte notifications"
+  },
+  {
+   "chunks": [
+    "00dddd000591000100b9dddd0005910201dddd000591000100b8dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    }
+   ],
+   "what": "noise, a bad CRC and a short false start, then a good frame"
+  },
+  {
+   "chunks": [
+    "dd000511001edddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd81dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 17,
+     "content": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+   ],
+   "what": "dd inside the content is not a delimiter"
+  },
+  {
+   "chunks": [
+    "dd0005840201000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff019bdd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 132,
+     "content": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff01"
+    }
+   ],
+   "what": "513 bytes of content"
+  },
+  {
+   "chunks": [
+    "dd0005840fffdd000591000100b8dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    }
+   ],
+   "what": "a false start claiming 4095 bytes does not hold up the frame after it"
+  },
+  {
+   "chunks": [
+    "dd0005840fff",
+    "dd000591",
+    "000100b8dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    }
+   ],
+   "what": "the same, spread over notifications"
+  },
+  {
+   "chunks": [
+    "dd01059100010091dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    }
+   ],
+   "what": "the byte after the first dd is covered by the CRC, but need not be 00"
+  },
+  {
+   "chunks": [
+    "dddd000591000100b8dd"
+   ],
+   "frames": [
+    {
+     "function": 5,
+     "sub": 145,
+     "content": "00"
+    }
+   ],
+   "what": "a frame right after a stray dd"
+  }
+ ],
+ "tenths": [
+  {
+   "dots": 8,
+   "dpi": 203,
+   "tenths": 10
+  },
+  {
+   "dots": 2,
+   "dpi": 203,
+   "tenths": 3
+  },
+  {
+   "dots": 576,
+   "dpi": 203,
+   "tenths": 721
+  },
+  {
+   "dots": 568,
+   "dpi": 300,
+   "tenths": 481
+  },
+  {
+   "dots": 354,
+   "dpi": 300,
+   "tenths": 300
+  },
+  {
+   "dots": 1066,
+   "dpi": 203,
+   "tenths": 1334
+  }
+ ],
+ "print_time_ms": [
+  {
+   "rows": 2,
+   "ms": 1506.0
+  },
+  {
+   "rows": 240,
+   "ms": 2220.0
+  },
+  {
+   "rows": 354,
+   "ms": 2562.0
+  },
+  {
+   "rows": 945,
+   "ms": 4335.0
+  }
+ ]
+}
