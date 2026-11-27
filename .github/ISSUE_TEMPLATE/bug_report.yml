@@ -1,0 +1,63 @@
+name: Bug report
+description: Something doesn't work, prints wrong, or crashes.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't paste your Discogs token, and for security
+        problems use the private advisory form linked from "New issue" instead.
+
+  - type: input
+    id: version
+    attributes:
+      label: crate-labels version
+      description: Paste the output of `crate-labels version`.
+      placeholder: crate-labels 0.1.0 (commit 1a2b3c4d5e6f, 2026-11-26T10:00:00Z, go1.27.4 darwin/arm64)
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: Apple menu → About This Mac, or `sw_vers -productVersion`. Say if it's an Intel Mac.
+      placeholder: "26.1 (Apple silicon)"
+    validations:
+      required: true
+
+  - type: input
+    id: printer
+    attributes:
+      label: Printer model and connection
+      description: Model, and how it's connected (Bluetooth, Wi-Fi/IPP, CUPS). "None" if it's not a printing bug.
+      placeholder: Phomemo M110 over Bluetooth
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the Discogs release link, template, stock and options if it's about a label.
+      placeholder: |
+        1. Paste https://www.discogs.com/release/118638
+        2. Pick template "dj-two-track", stock "50x80-two-track"
+        3. Press ⌘P
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+      description: Photos of a misprinted label or a screenshot of the preview help a lot.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Output from the terminal running `crate-labels serve`, or the failing command's output.
+      render: text

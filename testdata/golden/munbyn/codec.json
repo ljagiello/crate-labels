@@ -1,0 +1,600 @@
+{
+ "frames": [
+  {
+   "name": "device_info",
+   "payload": "0801",
+   "frame": "5502405d0801"
+  },
+  {
+   "name": "print_end",
+   "payload": "080a",
+   "frame": "55024055080a"
+  },
+  {
+   "name": "paper_type_set_gap",
+   "payload": "080b2002",
+   "frame": "55040071080b2002"
+  },
+  {
+   "name": "paper_type_set_continuous",
+   "payload": "080b2004",
+   "frame": "55040075080b2004"
+  },
+  {
+   "name": "paper_type_set_black_mark",
+   "payload": "080b2006",
+   "frame": "55040075080b2006"
+  }
+ ],
+ "varint": [
+  {
+   "value": 0,
+   "hex": "00"
+  },
+  {
+   "value": 1,
+   "hex": "01"
+  },
+  {
+   "value": 127,
+   "hex": "7f"
+  },
+  {
+   "value": 128,
+   "hex": "8001"
+  },
+  {
+   "value": 300,
+   "hex": "ac02"
+  },
+  {
+   "value": 11520,
+   "hex": "805a"
+  },
+  {
+   "value": 23040,
+   "hex": "80b401"
+  },
+  {
+   "value": 4294967295,
+   "hex": "ffffffff0f"
+  },
+  {
+   "value": 34359738368,
+   "hex": "808080808001"
+  }
+ ],
+ "zigzag32": [
+  {
+   "value": 0,
+   "zigzag": 0
+  },
+  {
+   "value": -1,
+   "zigzag": 1
+  },
+  {
+   "value": 1,
+   "zigzag": 2
+  },
+  {
+   "value": -2,
+   "zigzag": 3
+  },
+  {
+   "value": 2,
+   "zigzag": 4
+  },
+  {
+   "value": 482,
+   "zigzag": 964
+  },
+  {
+   "value": 11520,
+   "zigzag": 23040
+  },
+  {
+   "value": -11520,
+   "zigzag": 23039
+  },
+  {
+   "value": 2147483647,
+   "zigzag": 4294967294
+  },
+  {
+   "value": -2147483648,
+   "zigzag": 4294967295
+  }
+ ],
+ "builder": [
+  {
+   "ops": [
+    [
+     "uint",
+     1,
+     0
+    ],
+    [
+     "signed",
+     4,
+     0
+    ],
+    [
+     "blob",
+     5,
+     ""
+    ]
+   ],
+   "hex": "",
+   "what": "zero/empty fields are omitted"
+  },
+  {
+   "ops": [
+    [
+     "uint",
+     1,
+     10
+    ]
+   ],
+   "hex": "080a",
+   "what": "PRINT_END command payload"
+  },
+  {
+   "ops": [
+    [
+     "uint",
+     1,
+     11
+    ],
+    [
+     "signed",
+     4,
+     1
+    ]
+   ],
+   "hex": "080b2002",
+   "what": "PAPER_TYPE_SET GAP: zigzag(1) = 2"
+  },
+  {
+   "ops": [
+    [
+     "signed",
+     3,
+     11520
+    ]
+   ],
+   "hex": "1880b401",
+   "what": "raster size 11520 in field 3"
+  },
+  {
+   "ops": [
+    [
+     "signed",
+     10,
+     482
+    ]
+   ],
+   "hex": "50c407",
+   "what": "compressed size 482 in field 10"
+  },
+  {
+   "ops": [
+    [
+     "signed",
+     3,
+     -1
+    ]
+   ],
+   "hex": "1801",
+   "what": "negative sint: zigzag(-1) = 1"
+  },
+  {
+   "ops": [
+    [
+     "blob",
+     2,
+     "f843c0"
+    ]
+   ],
+   "hex": "1203f843c0",
+   "what": "length-delimited"
+  },
+  {
+   "ops": [
+    [
+     "uint",
+     6,
+     48
+    ],
+    [
+     "uint",
+     7,
+     3
+    ],
+    [
+     "uint",
+     300,
+     1
+    ]
+   ],
+   "hex": "30303803e01201",
+   "what": "multi-byte key for field 300"
+  }
+ ],
+ "decode_fields": [
+  {
+   "hex": "08010802",
+   "fields": {
+    "1": 2
+   },
+   "what": "the last value wins"
+  },
+  {
+   "hex": "08011a02aabb10c801",
+   "fields": {
+    "1": 1,
+    "3": "aabb",
+    "2": 200
+   },
+   "what": "varint, bytes, multi-byte varint"
+  },
+  {
+   "hex": "08010d000000001001",
+   "fields": {
+    "1": 1
+   },
+   "what": "wire type 5 stops parsing"
+  },
+  {
+   "hex": "08011205aa",
+   "fields": {
+    "1": 1
+   },
+   "what": "truncated bytes stop parsing"
+  },
+  {
+   "hex": "08ffffffffffffffffffff01",
+   "fields": {},
+   "what": "a varint over 64 bits stops parsing"
+  },
+  {
+   "hex": "1803",
+   "fields": {
+    "3": 3
+   },
+   "what": "varints are NOT zigzag-decoded on parse"
+  }
+ ],
+ "reassembler": [
+  {
+   "chunks": [
+    "550240550102"
+   ],
+   "payloads": [
+    "0102"
+   ],
+   "what": "one whole frame"
+  },
+  {
+   "chunks": [
+    "550240",
+    "55",
+    "0102"
+   ],
+   "payloads": [
+    "0102"
+   ],
+   "what": "the same frame in three notifications"
+  },
+  {
+   "chunks": [
+    "55024055",
+    "0102"
+   ],
+   "payloads": [
+    "0102"
+   ],
+   "what": "split after the header"
+  },
+  {
+   "chunks": [
+    "550240550103"
+   ],
+   "payloads": [
+    "0103"
+   ],
+   "what": "the low two bits of the payload XOR have no place in the frame, so 0103 passes the check made for 0102"
+  },
+  {
+   "chunks": [
+    "550240550106"
+   ],
+   "payloads": [],
+   "what": "bit 2 of the payload XOR differs: rejected"
+  },
+  {
+   "chunks": [
+    "55004055"
+   ],
+   "payloads": [
+    ""
+   ],
+   "what": "an empty payload is returned as such"
+  },
+  {
+   "chunks": [
+    "00135502405d080155"
+   ],
+   "payloads": [
+    "0801"
+   ],
+   "what": "noise before a frame, and a lone 55 after it"
+  },
+  {
+   "chunks": [
+    "55ff7f015502405d0801"
+   ],
+   "payloads": [
+    "0801"
+   ],
+   "what": "a false start claiming 16383 bytes does not hold up the frame after it"
+  },
+  {
+   "chunks": [
+    "55ff7f01",
+    "5502",
+    "405d0801"
+   ],
+   "payloads": [
+    "0801"
+   ],
+   "what": "the same, spread over notifications"
+  },
+  {
+   "chunks": [
+    "55ff5502405d0801"
+   ],
+   "payloads": [
+    "0801"
+   ],
+   "what": "a frame that starts inside a rejected header"
+  },
+  {
+   "chunks": [
+    "552c817b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "550240550102"
+   ],
+   "payloads": [
+    "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "0102"
+   ],
+   "what": "a 300-byte payload, then a short frame"
+  },
+  {
+   "chunks": [
+    "5502405d08015502405501025502405d0801"
+   ],
+   "payloads": [
+    "0801",
+    "0102",
+    "0801"
+   ],
+   "what": "three frames in one notification"
+  }
+ ],
+ "replies": [
+  {
+   "frame": "55124080080110c8011a0b1a05312e302e3028505001",
+   "reply": {
+    "kind": "info",
+    "event": 1,
+    "code": 200,
+    "paper": 1,
+    "firmware": "1.0.0",
+    "battery": 80
+   },
+   "what": "DEVICE_INFO answer"
+  },
+  {
+   "frame": "55050089080b10c801",
+   "reply": {
+    "kind": "paper-set",
+    "event": 11,
+    "code": 200
+   },
+   "what": "PAPER_TYPE_SET accepted"
+  },
+  {
+   "frame": "5509c06d08061a05080b120132",
+   "reply": {
+    "kind": "section-ack",
+    "event": 6,
+    "report": 11,
+    "state": 2
+   },
+   "what": "section acknowledged"
+  },
+  {
+   "frame": "5509c06d08061a05080a120130",
+   "reply": {
+    "kind": "label-done",
+    "event": 6,
+    "report": 10,
+    "state": 0
+   },
+   "what": "label done"
+  },
+  {
+   "frame": "5509c06d08061a05080a120132",
+   "reply": {
+    "kind": "label-done",
+    "event": 6,
+    "report": 10,
+    "state": 2
+   },
+   "what": "label done with the no-labels bit"
+  },
+  {
+   "frame": "5509c02508061a05080a120178",
+   "reply": {
+    "kind": "label-done",
+    "event": 6,
+    "report": 10,
+    "state": 0
+   },
+   "what": "a state that is not a number reads as 0"
+  },
+  {
+   "frame": "5509c06d08061a05080b120133",
+   "reply": {
+    "kind": "unknown",
+    "event": 6,
+    "report": 11,
+    "state": 3
+   },
+   "what": "report 11 with another state"
+  },
+  {
+   "frame": "5509c06908061a05080c120132",
+   "reply": {
+    "kind": "unknown",
+    "event": 6,
+    "report": 12,
+    "state": 2
+   },
+   "what": "another report"
+  },
+  {
+   "frame": "550500b9080410f403",
+   "reply": {
+    "kind": "rejected",
+    "event": 4,
+    "code": 500
+   },
+   "what": "DEVICE_PRINT refused"
+  },
+  {
+   "frame": "55050085080410c801",
+   "reply": {
+    "kind": "unknown",
+    "event": 4,
+    "code": 200
+   },
+   "what": "DEVICE_PRINT with 200 needs no action"
+  },
+  {
+   "frame": "550500dd0801109403",
+   "reply": {
+    "kind": "unknown",
+    "event": 1,
+    "code": 404
+   },
+   "what": "DEVICE_INFO failed"
+  },
+  {
+   "frame": "550500b5080b10f403",
+   "reply": {
+    "kind": "unknown",
+    "event": 11,
+    "code": 500
+   },
+   "what": "PAPER_TYPE_SET failed"
+  }
+ ],
+ "problem": [
+  {
+   "status": 0,
+   "condition": null
+  },
+  {
+   "status": 1,
+   "condition": "busy"
+  },
+  {
+   "status": 2,
+   "condition": "no-labels"
+  },
+  {
+   "status": 4,
+   "condition": "memory-full"
+  },
+  {
+   "status": 8,
+   "condition": "lid-open"
+  },
+  {
+   "status": 16,
+   "condition": "jammed"
+  },
+  {
+   "status": 32,
+   "condition": "head-hot"
+  },
+  {
+   "status": 64,
+   "condition": "battery-low"
+  },
+  {
+   "status": 128,
+   "condition": "motor-hot"
+  },
+  {
+   "status": 256,
+   "condition": "measuring"
+  },
+  {
+   "status": 10,
+   "condition": "lid-open"
+  },
+  {
+   "status": 33,
+   "condition": "head-hot"
+  },
+  {
+   "status": 3,
+   "condition": "no-labels"
+  },
+  {
+   "status": 68,
+   "condition": "battery-low"
+  },
+  {
+   "status": 129,
+   "condition": "motor-hot"
+  },
+  {
+   "status": 510,
+   "condition": "lid-open"
+  },
+  {
+   "status": 4096,
+   "condition": "unknown"
+  },
+  {
+   "status": 4097,
+   "condition": "busy"
+  }
+ ],
+ "section_rows": [
+  {
+   "width_dots": 8,
+   "rows": 4096,
+   "bytes": 4096
+  },
+  {
+   "width_dots": 320,
+   "rows": 96,
+   "bytes": 3840
+  },
+  {
+   "width_dots": 352,
+   "rows": 88,
+   "bytes": 3872
+  },
+  {
+   "width_dots": 384,
+   "rows": 80,
+   "bytes": 3840
+  }
+ ]
+}

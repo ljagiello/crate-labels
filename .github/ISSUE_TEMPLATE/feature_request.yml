@@ -1,0 +1,31 @@
+name: Feature request
+description: A new printer, label template, stock, or anything else you'd like.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem or use case, rather than a particular solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like crate-labels to do?
+    validations:
+      required: true
+
+  - type: input
+    id: printer
+    attributes:
+      label: Printer model (if this is about printer support)
+      description: Many models only need a TOML file; see "Adding printers" in the README.
+      placeholder: Phomemo M120
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Sketches, photos of labels you like, links to the printer's specs.

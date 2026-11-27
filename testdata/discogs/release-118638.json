@@ -1,0 +1,183 @@
+{
+ "id": 118638,
+ "status": "Accepted",
+ "year": 1995,
+ "resource_url": "https://api.discogs.com/releases/118638",
+ "uri": "https://www.discogs.com/release/118638-DJ-Force-The-Evolution-Simply-Electric-Out-Of-Control",
+ "artists": [
+  {
+   "name": "DJ Force & The Evolution",
+   "anv": "",
+   "join": "",
+   "role": "",
+   "tracks": "",
+   "id": 45587,
+   "resource_url": "https://api.discogs.com/artists/45587",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/1.jpeg"
+  }
+ ],
+ "artists_sort": "DJ Force & The Evolution",
+ "labels": [
+  {
+   "name": "Kniteforce Records",
+   "catno": "KF039",
+   "entity_type": "1",
+   "entity_type_name": "Label",
+   "id": 3345,
+   "resource_url": "https://api.discogs.com/labels/3345",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/2.jpeg"
+  }
+ ],
+ "series": [],
+ "companies": [
+  {
+   "name": "Kniteforce Records",
+   "catno": "",
+   "entity_type": "14",
+   "entity_type_name": "Copyright (c)",
+   "id": 3345,
+   "resource_url": "https://api.discogs.com/labels/3345",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/3.jpeg"
+  },
+  {
+   "name": "Kniteforce Publishing",
+   "catno": "",
+   "entity_type": "21",
+   "entity_type_name": "Published By",
+   "id": 292829,
+   "resource_url": "https://api.discogs.com/labels/292829"
+  },
+  {
+   "name": "Mo's Music Machine",
+   "catno": "",
+   "entity_type": "9",
+   "entity_type_name": "Distributed By",
+   "id": 10182,
+   "resource_url": "https://api.discogs.com/labels/10182",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/4.jpeg"
+  }
+ ],
+ "formats": [
+  {
+   "name": "Vinyl",
+   "qty": "1",
+   "descriptions": [
+    "12\"",
+    "45 RPM"
+   ]
+  }
+ ],
+ "data_quality": "Correct",
+ "format_quantity": 1,
+ "date_added": "2003-03-05T12:25:04-08:00",
+ "date_changed": "2016-07-14T03:58:58-07:00",
+ "master_id": 4589,
+ "master_url": "https://api.discogs.com/masters/4589",
+ "title": "Simply Electric / Out Of Control",
+ "country": "UK",
+ "released": "1995",
+ "released_formatted": "1995",
+ "identifiers": [
+  {
+   "type": "Matrix / Runout",
+   "value": "KF - 39 - A-1 PAULS @ PORKYS' • T.D.S -10",
+   "description": "Side A, etchings"
+  },
+  {
+   "type": "Matrix / Runout",
+   "value": "KF - 39 - B 1 - PAULS¦CUTz - TDS • 10",
+   "description": "Side B, etchings"
+  }
+ ],
+ "videos": [
+  {
+   "uri": "https://www.youtube.com/watch?v=b6xsJwW3iVY",
+   "title": "Out Of Control (Remastered)",
+   "description": "Provided to YouTube by Cygnus Music Ltd\n\nOut Of Control (Remastered) · DJ Force & The Evolution\n\nSimply Electric EP (Remastered)\n\n℗ 2016 Kniteforce Records\n\nReleased on: 2016-12-08\n\nMusic  Publisher: Kniteforce Records\nComposer: DJ Force & The Evolution\n\n",
+   "duration": 306,
+   "embed": true
+  },
+  {
+   "uri": "https://www.youtube.com/watch?v=QRIdIDg6sQY",
+   "title": "DJ Force & The Evolution - Simply Electric",
+   "description": "http://www.discogs.com/DJ-Force-The-Evolution-Simply-Electric-Out-Of-Control/master/4589",
+   "duration": 325,
+   "embed": true
+  },
+  {
+   "uri": "https://www.youtube.com/watch?v=HCldWoXAFdc",
+   "title": "DJ Force & The Evolution - Simply Electric [HQ] (1/2)",
+   "description": "DJ Force & The Evolution - Simply Electric / Out Of Control\n1995 : Kniteforce Records : KF039",
+   "duration": 324,
+   "embed": true
+  }
+ ],
+ "genres": [
+  "Electronic"
+ ],
+ "styles": [
+  "Breakbeat",
+  "Happy Hardcore"
+ ],
+ "tracklist": [
+  {
+   "position": "A",
+   "type_": "track",
+   "title": "Simply Electric",
+   "duration": "4:39"
+  },
+  {
+   "position": "B",
+   "type_": "track",
+   "title": "Out Of Control",
+   "duration": "5:05"
+  }
+ ],
+ "extraartists": [
+  {
+   "name": "Paul Solomons",
+   "anv": "Pauls",
+   "join": "",
+   "role": "Mastered By",
+   "tracks": "",
+   "id": 388200,
+   "resource_url": "https://api.discogs.com/artists/388200"
+  }
+ ],
+ "images": [
+  {
+   "type": "primary",
+   "uri": "https://i.discogs.com/fixture/release-118638/5.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/6.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/7.jpeg",
+   "width": 600,
+   "height": 600
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/release-118638/8.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/9.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/10.jpeg",
+   "width": 365,
+   "height": 359
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/release-118638/11.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/12.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/13.jpeg",
+   "width": 365,
+   "height": 363
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/release-118638/14.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/15.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/16.jpeg",
+   "width": 365,
+   "height": 369
+  }
+ ],
+ "thumb": "https://i.discogs.com/fixture/release-118638/17.jpeg",
+ "is_offensive": false
+}

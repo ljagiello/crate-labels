@@ -1,0 +1,29 @@
+{
+ "canvas_px": [
+  945,
+  567
+ ],
+ "design_mm": [
+  80,
+  48
+ ],
+ "ink_boxes_px": [
+  [
+   14,
+   0,
+   579,
+   943
+  ]
+ ],
+ "page_mm": [
+  50,
+  80
+ ],
+ "page_png": "50x80-two-track.page1.png",
+ "page_px": [
+  591,
+  945
+ ],
+ "rotate_cw": 90,
+ "stock": "50x80-two-track"
+}

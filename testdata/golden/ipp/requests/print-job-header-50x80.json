@@ -1,0 +1,176 @@
+{
+ "code": "0x0002",
+ "data_length": 0,
+ "groups": [
+  {
+   "attributes": [
+    {
+     "name": "attributes-charset",
+     "values": [
+      {
+       "tag": "0x47",
+       "value": "utf-8"
+      }
+     ]
+    },
+    {
+     "name": "attributes-natural-language",
+     "values": [
+      {
+       "tag": "0x48",
+       "value": "en"
+      }
+     ]
+    },
+    {
+     "name": "printer-uri",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "ipp://198.51.100.9:631/ipp/print"
+      }
+     ]
+    },
+    {
+     "name": "requesting-user-name",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "crate-labels"
+      }
+     ]
+    },
+    {
+     "name": "job-name",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "Vinyl Label"
+      }
+     ]
+    },
+    {
+     "name": "document-format",
+     "values": [
+      {
+       "tag": "0x49",
+       "value": "image/urf"
+      }
+     ]
+    }
+   ],
+   "tag": "0x01"
+  },
+  {
+   "attributes": [
+    {
+     "name": "media-col",
+     "values": [
+      {
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ],
+           "tag": "0x34"
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        }
+       ],
+       "tag": "0x34"
+      }
+     ]
+    },
+    {
+     "name": "print-color-mode",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "monochrome"
+      }
+     ]
+    },
+    {
+     "name": "print-scaling",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    }
+   ],
+   "tag": "0x02"
+  }
+ ],
+ "request_id": 2,
+ "version": [
+  1,
+  1
+ ]
+}

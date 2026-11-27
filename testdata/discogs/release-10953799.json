@@ -1,0 +1,150 @@
+{
+ "id": 10953799,
+ "status": "Accepted",
+ "year": 2017,
+ "resource_url": "https://api.discogs.com/releases/10953799",
+ "uri": "https://www.discogs.com/release/10953799-Paul-Bradley-10-A-Class-Speed",
+ "artists": [
+  {
+   "name": "Paul Bradley (10)",
+   "anv": "",
+   "join": "",
+   "role": "",
+   "tracks": "",
+   "id": 5785051,
+   "resource_url": "https://api.discogs.com/artists/5785051",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/1.jpeg"
+  }
+ ],
+ "artists_sort": "Paul Bradley (10)",
+ "labels": [
+  {
+   "name": "Knitebreed",
+   "catno": "BREEDCD01",
+   "entity_type": "1",
+   "entity_type_name": "Label",
+   "id": 10128,
+   "resource_url": "https://api.discogs.com/labels/10128",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/2.jpeg"
+  }
+ ],
+ "series": [],
+ "companies": [
+  {
+   "name": "Kniteforce Records",
+   "catno": "",
+   "entity_type": "14",
+   "entity_type_name": "Copyright (c)",
+   "id": 3345,
+   "resource_url": "https://api.discogs.com/labels/3345",
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/3.jpeg"
+  }
+ ],
+ "formats": [
+  {
+   "name": "CD",
+   "qty": "1",
+   "descriptions": [
+    "Mini-Album",
+    "Limited Edition"
+   ]
+  }
+ ],
+ "data_quality": "Correct",
+ "format_quantity": 1,
+ "date_added": "2017-10-04T07:34:56-07:00",
+ "date_changed": "2020-03-26T04:29:18-07:00",
+ "title": "A-Class Speed",
+ "country": null,
+ "released": "2017-10-00",
+ "released_formatted": "Oct 2017",
+ "identifiers": [],
+ "videos": [],
+ "genres": [
+  "Electronic"
+ ],
+ "styles": [
+  "Hardcore"
+ ],
+ "tracklist": [
+  {
+   "position": "1",
+   "type_": "track",
+   "title": "Get You",
+   "duration": ""
+  },
+  {
+   "position": "2",
+   "type_": "track",
+   "title": "The Line",
+   "duration": ""
+  },
+  {
+   "position": "3",
+   "type_": "track",
+   "title": "Ghost Boat",
+   "duration": ""
+  },
+  {
+   "position": "4",
+   "type_": "track",
+   "title": "Higher",
+   "duration": ""
+  },
+  {
+   "position": "5",
+   "type_": "track",
+   "title": "Wicked Night",
+   "duration": ""
+  },
+  {
+   "position": "6",
+   "type_": "track",
+   "title": "Slam This",
+   "duration": ""
+  },
+  {
+   "position": "7",
+   "type_": "track",
+   "title": "Purely Free",
+   "duration": ""
+  },
+  {
+   "position": "8",
+   "type_": "track",
+   "title": "'Kin Devvo'd",
+   "duration": ""
+  }
+ ],
+ "extraartists": [
+  {
+   "name": "Paul Bradley (10)",
+   "anv": "",
+   "join": "",
+   "role": "Written-By, Producer",
+   "tracks": "",
+   "id": 5785051,
+   "resource_url": "https://api.discogs.com/artists/5785051"
+  }
+ ],
+ "images": [
+  {
+   "type": "primary",
+   "uri": "https://i.discogs.com/fixture/release-10953799/4.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-10953799/5.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-10953799/6.jpeg",
+   "width": 600,
+   "height": 600
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/release-10953799/7.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-10953799/8.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-10953799/9.jpeg",
+   "width": 600,
+   "height": 600
+  }
+ ],
+ "thumb": "https://i.discogs.com/fixture/release-10953799/10.jpeg",
+ "is_offensive": false
+}

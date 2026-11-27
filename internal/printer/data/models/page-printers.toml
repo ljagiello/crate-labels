@@ -1,0 +1,28 @@
+# Page and network printers. These are generic: the address chosen at setup
+# (an IPP URI or a CUPS queue name) picks the device.
+
+[[model]]
+id = "ipp-sheet"
+label = "Wi-Fi printer (IPP, label sheets)"
+family = "ipp"
+link = "ipp"
+dpi = 300
+stocks = ["letter-uncut-50x30", "letter-uncut-50x80", "avery-5160", "avery-5163"]
+options = { document_format = "image/urf", color = false }
+
+[[model]]
+id = "ipp-label"
+label = "Wi-Fi label printer (IPP Everywhere / AirPrint)"
+family = "ipp"
+link = "ipp"
+dpi = 300
+stocks = ["50x30", "40x30", "50x80-two-track", "70x80", "4x6", "center-7in"]
+options = { document_format = "image/urf", color = false }
+
+[[model]]
+id = "cups"
+label = "Any macOS printer (CUPS queue)"
+family = "cups"
+link = "cups"
+dpi = 300
+stocks = ["50x30", "40x30", "50x80-two-track", "70x80", "4x6", "center-7in", "letter-uncut-50x30", "letter-uncut-50x80", "avery-5160", "avery-5163"]

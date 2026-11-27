@@ -1,0 +1,29 @@
+{
+ "canvas_px": [
+  567,
+  354
+ ],
+ "design_mm": [
+  48,
+  30
+ ],
+ "ink_boxes_px": [
+  [
+   12,
+   0,
+   577,
+   352
+  ]
+ ],
+ "page_mm": [
+  50,
+  30
+ ],
+ "page_png": "50x30.page1.png",
+ "page_px": [
+  591,
+  354
+ ],
+ "rotate_cw": 0,
+ "stock": "50x30"
+}

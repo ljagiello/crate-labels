@@ -1,0 +1,52 @@
+{
+ "what": "clabel-ct320b on 50x30",
+ "model": {
+  "id": "clabel-ct320b",
+  "dpi": 203.2,
+  "head_dots": 576,
+  "options": {
+   "fixed_edge_mm": 3,
+   "speed": 1,
+   "write_settings": true
+  },
+  "chunk_bytes": 238,
+  "chunk_gap_ms": 5
+ },
+ "stock": {
+  "id": "50x30",
+  "media": "die_cut",
+  "design_mm": [
+   48,
+   30
+  ],
+  "feed_mm": [
+   50,
+   30
+  ],
+  "rotate_cw": 0
+ },
+ "settings": {},
+ "input": "input.png",
+ "preview": "preview.png",
+ "canvas": {
+  "Width": 384,
+  "Height": 240,
+  "DPI": 203.2
+ },
+ "layout": {
+  "WidthDots": 576,
+  "ContentDots": 352,
+  "OffsetDots": 0,
+  "Rows": 240
+ },
+ "rated_dpi": 203,
+ "pages": [
+  {
+   "text": "page-01.txt",
+   "raster": "page-01-raster.bin",
+   "rows": 240,
+   "paper": 0,
+   "print_ms": 2220
+  }
+ ]
+}

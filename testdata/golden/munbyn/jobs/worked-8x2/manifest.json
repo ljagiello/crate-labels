@@ -1,0 +1,17 @@
+{
+ "what": "two 8-dot rows, f0 and 0f: the smallest job",
+ "width_dots": 8,
+ "rows": 2,
+ "raster_bytes": 2,
+ "section_rows": 4096,
+ "compressed_total": 3,
+ "low_memory": true,
+ "sections": [
+  {
+   "raster_offset": 0,
+   "raster_bytes": 2,
+   "compressed_bytes": 3,
+   "packages": 1
+  }
+ ]
+}

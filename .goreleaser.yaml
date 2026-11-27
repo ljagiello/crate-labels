@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# GoReleaser v2. Release: push a v* tag (.github/workflows/release.yml).
+# Local dry run: goreleaser release --snapshot --clean
+version: 2
+
+project_name: crate-labels
+
+builds:
+  - id: crate-labels
+    main: ./cmd/crate-labels
+    binary: crate-labels
+    goos: [darwin]
+    goarch: [amd64, arm64]
+    env:
+      # tinygo.org/x/bluetooth reaches CoreBluetooth through cgo.
+      - CGO_ENABLED=1
+      # Without this, cgo objects take the build machine's macOS version as their
+      # minimum. 13.0 matches what the Go 1.27 runtime itself requires.
+      - MACOSX_DEPLOYMENT_TARGET=13.0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w
+      - -X github.com/ljagiello/crate-labels/internal/service.Version={{ .Version }}
+      - -X main.commit={{ .Commit }}
+      - -X main.date={{ .CommitDate }}
+    mod_timestamp: "{{ .CommitTimestamp }}"
+
+universal_binaries:
+  - id: crate-labels
+    ids: [crate-labels]
+    name_template: crate-labels
+    replace: true
+    mod_timestamp: "{{ .CommitTimestamp }}"
+
+archives:
+  - id: crate-labels
+    ids: [crate-labels]
+    formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_macos_universal"
+    files:
+      - README.md
+      - LICENSE
+      - NOTICE
+      - src: internal/layout/fonts/*_ofl.txt
+        dst: licenses/fonts
+        strip_parent: true
+
+checksum:
+  name_template: checksums.txt
+  algorithm: sha256
+
+snapshot:
+  version_template: "{{ incpatch .Version }}-SNAPSHOT-{{ .ShortCommit }}"
+
+release:
+  github:
+    owner: ljagiello
+    name: crate-labels
+  prerelease: auto
+  footer: |
+    The binary is a universal macOS build (Apple silicon and Intel, macOS 13 or later).
+    It is not signed or notarized; see the README's Install section for the one-time
+    `xattr -d com.apple.quarantine` step.
+
+changelog:
+  use: git
+  sort: asc
+  abbrev: 7
+  filters:
+    exclude:
+      - "^Merge (pull request|branch|remote-tracking branch)"
+      - '^(test|style)(\(.+\))?!?:'
+  groups:
+    - title: Breaking changes
+      regexp: '^[a-z]+(\(.+\))?!:.+$'
+      order: 0
+    - title: Features
+      regexp: '^feat(\(.+\))?:.+$'
+      order: 1
+    - title: Bug fixes
+      regexp: '^fix(\(.+\))?:.+$'
+      order: 2
+    - title: Performance
+      regexp: '^perf(\(.+\))?:.+$'
+      order: 3
+    - title: Dependencies
+      regexp: '^(build|ci)\(deps\):.+$'
+      order: 5
+    - title: Documentation
+      regexp: '^docs(\(.+\))?:.+$'
+      order: 4
+    - title: Build and CI
+      regexp: '^(build|ci)(\(.+\))?:.+$'
+      order: 6
+    - title: Other changes
+      order: 999

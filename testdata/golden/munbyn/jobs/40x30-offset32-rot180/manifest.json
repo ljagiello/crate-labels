@@ -1,0 +1,68 @@
+{
+ "what": "munbyn-fm226 on 40x30 with offset_dots=32, extra_rotate_cw=180",
+ "model": {
+  "id": "munbyn-fm226",
+  "dpi": 203.2,
+  "head_dots": 384,
+  "options": {},
+  "chunk_bytes": 128,
+  "chunk_gap_ms": 0
+ },
+ "stock": {
+  "id": "40x30",
+  "media": "die_cut",
+  "design_mm": [
+   40,
+   30
+  ],
+  "feed_mm": [
+   40,
+   30
+  ],
+  "rotate_cw": 0
+ },
+ "settings": {
+  "extra_rotate_cw": 180,
+  "offset_dots": 32
+ },
+ "canvas": {
+  "Width": 320,
+  "Height": 240,
+  "DPI": 203.2
+ },
+ "input": "input.png",
+ "preview": "preview.png",
+ "width_dots": 352,
+ "paper_type": 1,
+ "layout": {
+  "WidthDots": 352,
+  "ContentDots": 320,
+  "OffsetDots": 32,
+  "Rows": 240
+ },
+ "rows": 240,
+ "raster_bytes": 10560,
+ "section_rows": 88,
+ "compressed_total": 4984,
+ "low_memory": true,
+ "sections": [
+  {
+   "raster_offset": 0,
+   "raster_bytes": 3872,
+   "compressed_bytes": 2867,
+   "packages": 15
+  },
+  {
+   "raster_offset": 3872,
+   "raster_bytes": 3872,
+   "compressed_bytes": 1526,
+   "packages": 8
+  },
+  {
+   "raster_offset": 7744,
+   "raster_bytes": 2816,
+   "compressed_bytes": 591,
+   "packages": 3
+  }
+ ]
+}

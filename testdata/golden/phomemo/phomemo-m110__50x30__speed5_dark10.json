@@ -1,0 +1,37 @@
+{
+  "model": "phomemo-m110",
+  "stock": "50x30",
+  "settings": {
+    "darkness": 10,
+    "speed": 5
+  },
+  "canvas": [
+    384,
+    240
+  ],
+  "turn_cw": 0,
+  "width": 384,
+  "lane": [
+    0,
+    384
+  ],
+  "image": [
+    0,
+    0,
+    384,
+    240
+  ],
+  "rows": 240,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m110__50x30__speed5_dark10.job0.bin",
+      "bytes": 11547,
+      "rows": 240,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m110__50x30__speed5_dark10.preview.pgm"
+}

@@ -1,0 +1,103 @@
+{
+ "id": 4589,
+ "main_release": 118638,
+ "most_recent_release": 8469999,
+ "resource_url": "https://api.discogs.com/masters/4589",
+ "uri": "https://www.discogs.com/master/4589-DJ-Force-The-Evolution-Simply-Electric-Out-Of-Control",
+ "versions_url": "https://api.discogs.com/masters/4589/versions",
+ "main_release_url": "https://api.discogs.com/releases/118638",
+ "most_recent_release_url": "https://api.discogs.com/releases/8469999",
+ "images": [
+  {
+   "type": "primary",
+   "uri": "https://i.discogs.com/fixture/master-4589/1.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/master-4589/2.jpeg",
+   "uri150": "https://i.discogs.com/fixture/master-4589/3.jpeg",
+   "width": 600,
+   "height": 600
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/master-4589/4.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/master-4589/5.jpeg",
+   "uri150": "https://i.discogs.com/fixture/master-4589/6.jpeg",
+   "width": 365,
+   "height": 359
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/master-4589/7.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/master-4589/8.jpeg",
+   "uri150": "https://i.discogs.com/fixture/master-4589/9.jpeg",
+   "width": 365,
+   "height": 363
+  },
+  {
+   "type": "secondary",
+   "uri": "https://i.discogs.com/fixture/master-4589/10.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/master-4589/11.jpeg",
+   "uri150": "https://i.discogs.com/fixture/master-4589/12.jpeg",
+   "width": 365,
+   "height": 369
+  }
+ ],
+ "genres": [
+  "Electronic"
+ ],
+ "styles": [
+  "Breakbeat",
+  "Happy Hardcore"
+ ],
+ "year": 1995,
+ "tracklist": [
+  {
+   "position": "A",
+   "type_": "track",
+   "title": "Simply Electric",
+   "duration": "4:39"
+  },
+  {
+   "position": "B",
+   "type_": "track",
+   "title": "Out Of Control",
+   "duration": "5:05"
+  }
+ ],
+ "artists": [
+  {
+   "name": "DJ Force & The Evolution",
+   "anv": "",
+   "join": "",
+   "role": "",
+   "tracks": "",
+   "id": 45587,
+   "resource_url": "https://api.discogs.com/artists/45587",
+   "thumbnail_url": "https://i.discogs.com/fixture/master-4589/13.jpeg"
+  }
+ ],
+ "title": "Simply Electric / Out Of Control",
+ "data_quality": "Correct",
+ "videos": [
+  {
+   "uri": "https://www.youtube.com/watch?v=b6xsJwW3iVY",
+   "title": "Out Of Control (Remastered)",
+   "description": "Provided to YouTube by Cygnus Music Ltd\n\nOut Of Control (Remastered) · DJ Force & The Evolution\n\nSimply Electric EP (Remastered)\n\n℗ 2016 Kniteforce Records\n\nReleased on: 2016-12-08\n\nMusic  Publisher: Kniteforce Records\nComposer: DJ Force & The Evolution\n\n",
+   "duration": 306,
+   "embed": true
+  },
+  {
+   "uri": "https://www.youtube.com/watch?v=QRIdIDg6sQY",
+   "title": "DJ Force & The Evolution - Simply Electric",
+   "description": "http://www.discogs.com/DJ-Force-The-Evolution-Simply-Electric-Out-Of-Control/master/4589",
+   "duration": 325,
+   "embed": true
+  },
+  {
+   "uri": "https://www.youtube.com/watch?v=HCldWoXAFdc",
+   "title": "DJ Force & The Evolution - Simply Electric [HQ] (1/2)",
+   "description": "DJ Force & The Evolution - Simply Electric / Out Of Control\n1995 : Kniteforce Records : KF039",
+   "duration": 324,
+   "embed": true
+  }
+ ]
+}

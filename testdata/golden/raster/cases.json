@@ -1,0 +1,232 @@
+[
+  {
+    "name": "lane-end",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 64,
+    "lane": [
+      24,
+      40
+    ],
+    "rows": 30,
+    "max_rows": 0,
+    "raster_rows": 30,
+    "image": [
+      24,
+      0,
+      64,
+      30
+    ],
+    "file": "lane-end.bin"
+  },
+  {
+    "name": "lane-center",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 64,
+    "lane": [
+      12,
+      40
+    ],
+    "rows": 30,
+    "max_rows": 0,
+    "raster_rows": 30,
+    "image": [
+      12,
+      0,
+      52,
+      30
+    ],
+    "file": "lane-center.bin"
+  },
+  {
+    "name": "lane-offset5",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 64,
+    "lane": [
+      5,
+      40
+    ],
+    "rows": 30,
+    "max_rows": 0,
+    "raster_rows": 30,
+    "image": [
+      5,
+      0,
+      45,
+      30
+    ],
+    "file": "lane-offset5.bin"
+  },
+  {
+    "name": "too-tall",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 64,
+    "lane": [
+      24,
+      40
+    ],
+    "rows": 12,
+    "max_rows": 0,
+    "raster_rows": 12,
+    "image": [
+      36,
+      0,
+      52,
+      12
+    ],
+    "file": "too-tall.bin"
+  },
+  {
+    "name": "short",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 48,
+    "lane": [
+      4,
+      40
+    ],
+    "rows": 60,
+    "max_rows": 0,
+    "raster_rows": 60,
+    "image": [
+      4,
+      15,
+      44,
+      45
+    ],
+    "file": "short.bin"
+  },
+  {
+    "name": "upscale",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 96,
+    "lane": [
+      0,
+      0
+    ],
+    "rows": 0,
+    "max_rows": 0,
+    "raster_rows": 72,
+    "image": [
+      0,
+      0,
+      96,
+      72
+    ],
+    "file": "upscale.bin"
+  },
+  {
+    "name": "follow-design",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 40,
+    "lane": [
+      0,
+      0
+    ],
+    "rows": 0,
+    "max_rows": 0,
+    "raster_rows": 30,
+    "image": [
+      0,
+      0,
+      40,
+      30
+    ],
+    "file": "follow-design.bin"
+  },
+  {
+    "name": "capped",
+    "design": [
+      40,
+      30
+    ],
+    "turn_cw": 0,
+    "width": 48,
+    "lane": [
+      0,
+      0
+    ],
+    "rows": 0,
+    "max_rows": 20,
+    "raster_rows": 20,
+    "image": [
+      10,
+      0,
+      37,
+      20
+    ],
+    "file": "capped.bin"
+  },
+  {
+    "name": "turn90",
+    "design": [
+      48,
+      30
+    ],
+    "turn_cw": 90,
+    "width": 32,
+    "lane": [
+      0,
+      0
+    ],
+    "rows": 48,
+    "max_rows": 0,
+    "raster_rows": 48,
+    "image": [
+      1,
+      0,
+      31,
+      48
+    ],
+    "file": "turn90.bin"
+  },
+  {
+    "name": "dither-only",
+    "design": [
+      64,
+      40
+    ],
+    "turn_cw": 0,
+    "width": 64,
+    "lane": [
+      0,
+      0
+    ],
+    "rows": 0,
+    "max_rows": 0,
+    "raster_rows": 40,
+    "image": [
+      0,
+      0,
+      64,
+      40
+    ],
+    "file": "dither-only.bin"
+  }
+]

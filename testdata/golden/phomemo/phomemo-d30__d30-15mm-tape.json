@@ -1,0 +1,33 @@
+{
+  "model": "phomemo-d30",
+  "stock": "d30-15mm-tape",
+  "canvas": [
+    400,
+    96
+  ],
+  "turn_cw": 90,
+  "width": 96,
+  "lane": [
+    0,
+    96
+  ],
+  "image": [
+    0,
+    0,
+    96,
+    400
+  ],
+  "rows": 400,
+  "media": 11,
+  "skip_feed": false,
+  "tail_rows": 100,
+  "jobs": [
+    {
+      "file": "phomemo-d30__d30-15mm-tape.job0.bin",
+      "bytes": 6027,
+      "rows": 500,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-d30__d30-15mm-tape.preview.pgm"
+}

@@ -1,0 +1,64 @@
+{
+ "what": "munbyn-fm226 on 50x30, an all-white label",
+ "model": {
+  "id": "munbyn-fm226",
+  "dpi": 203.2,
+  "head_dots": 384,
+  "options": {},
+  "chunk_bytes": 128,
+  "chunk_gap_ms": 0
+ },
+ "stock": {
+  "id": "50x30",
+  "media": "die_cut",
+  "design_mm": [
+   48,
+   30
+  ],
+  "feed_mm": [
+   50,
+   30
+  ],
+  "rotate_cw": 0
+ },
+ "canvas": {
+  "Width": 384,
+  "Height": 240,
+  "DPI": 203.2
+ },
+ "input": "input.png",
+ "preview": "preview.png",
+ "width_dots": 384,
+ "paper_type": 1,
+ "layout": {
+  "WidthDots": 384,
+  "ContentDots": 384,
+  "OffsetDots": 0,
+  "Rows": 240
+ },
+ "rows": 240,
+ "raster_bytes": 11520,
+ "section_rows": 80,
+ "compressed_total": 1446,
+ "low_memory": true,
+ "sections": [
+  {
+   "raster_offset": 0,
+   "raster_bytes": 3840,
+   "compressed_bytes": 482,
+   "packages": 3
+  },
+  {
+   "raster_offset": 3840,
+   "raster_bytes": 3840,
+   "compressed_bytes": 482,
+   "packages": 3
+  },
+  {
+   "raster_offset": 7680,
+   "raster_bytes": 3840,
+   "compressed_bytes": 482,
+   "packages": 3
+  }
+ ]
+}

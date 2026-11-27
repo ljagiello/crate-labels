@@ -1,0 +1,134 @@
+# Label stocks. design_mm is the canvas templates draw on; feed_mm is the physical
+# label as it leaves the printer (width across the head, length along feed; omit the
+# length for continuous media). rotate_cw turns the design before rasterising.
+#
+# extra holds driver-specific knobs. The Phomemo driver reads max_label_rows (the
+# longest a label on continuous stock may print), blank_rows_after (blank rows fed
+# after each label) and phomemo_short_footer (leave out the feed command).
+#
+# Add your own stocks in ~/.config/crate-labels/stocks.toml using the same format.
+
+[[stock]]
+id = "50x80-two-track"
+name = "50×80 mm two-track (DJ label)"
+media = "die_cut"
+design_mm = [80, 48]
+feed_mm = [50, 80]
+rotate_cw = 90
+
+[[stock]]
+id = "50x30"
+name = "50×30 mm"
+media = "die_cut"
+design_mm = [48, 30]
+feed_mm = [50, 30]
+
+[[stock]]
+id = "40x30"
+name = "40×30 mm"
+media = "die_cut"
+design_mm = [40, 30]
+feed_mm = [40, 30]
+
+[[stock]]
+id = "70x80"
+name = "70×80 mm four-track"
+media = "die_cut"
+design_mm = [70, 80]
+feed_mm = [70, 80]
+extra = { phomemo_short_footer = true }
+
+[[stock]]
+id = "d30-15mm-tape"
+name = "15 mm tape (D30)"
+media = "continuous"
+design_mm = [50, 12]
+feed_mm = [15]
+rotate_cw = 90
+# Each tape label ends with 100 blank rows of feed; 1100 rows of label plus that tail
+# fit in one 1200-row job.
+extra = { max_label_rows = 1100, blank_rows_after = 100 }
+
+[[stock]]
+id = "15x50"
+name = "15×50 mm die-cut (D30)"
+media = "die_cut"
+design_mm = [50, 12]
+feed_mm = [15, 50]
+rotate_cw = 90
+
+# --- Page-printer stocks (IPP / CUPS). Labels are imposed on the sheet. -----------
+# Avery grids and pitch confirmed against Avery's published layout table (MS KB Q146892);
+# outer margins are derived so the grid closes on Letter. Test-print on plain paper first.
+
+[[stock]]
+id = "letter-uncut-50x30"
+name = "Letter sheet, 50×30 mm cells (cut yourself)"
+media = "sheet"
+design_mm = [48, 30]
+feed_mm = [215.9, 279.4]
+sheet = { paper_mm = [215.9, 279.4], grid = "uncut", cell_mm = [50, 30] }
+
+[[stock]]
+id = "letter-uncut-50x80"
+name = "Letter sheet, 80×48 mm two-track cells (cut yourself)"
+media = "sheet"
+design_mm = [80, 48]
+feed_mm = [215.9, 279.4]
+sheet = { paper_mm = [215.9, 279.4], grid = "uncut", cell_mm = [80, 48] }
+
+# Size/count confirmed at avery.com/templates/5160; margins derived to close on Letter
+# (3 x 2.625 + 2 x 0.125 gap + 2 x 0.1875 = 8.5 in; 10 x 1.0 + 2 x 0.5 = 11 in), pitch
+# 2.750 in as in Microsoft KB Q146892. glabels puts the outer columns ~0.8 mm further out.
+# Do a plain-paper test print before real sheets.
+[[stock]]
+id = "avery-5160"
+name = "Avery 5160 / 8160 (1″×2⅝″, 30 per Letter sheet)"
+media = "sheet"
+design_mm = [66.675, 25.4]
+feed_mm = [215.9, 279.4]
+sheet = { paper_mm = [215.9, 279.4], rows = 10, cols = 3, margin_mm = [4.7625, 12.7], pitch_mm = [69.85, 25.4], cell_mm = [66.675, 25.4] }
+
+# Size/count confirmed at avery.com/templates/5163; margins derived to close on Letter
+# (2 x 4 + 0.1875 gap + 2 x 0.15625 = 8.5 in; 5 x 2 + 2 x 0.5 = 11 in), pitch 4.188 in as
+# in Microsoft KB Q146892. Do a plain-paper test print before real sheets.
+[[stock]]
+id = "avery-5163"
+name = "Avery 5163 / 8163 (2″×4″, 10 per Letter sheet)"
+media = "sheet"
+design_mm = [101.6, 50.8]
+feed_mm = [215.9, 279.4]
+sheet = { paper_mm = [215.9, 279.4], rows = 5, cols = 2, margin_mm = [3.96875, 12.7], pitch_mm = [106.3625, 50.8], cell_mm = [101.6, 50.8] }
+
+[[stock]]
+id = "4x6"
+name = "4×6″ shipping label"
+media = "die_cut"
+design_mm = [101.6, 152.4]
+feed_mm = [101.6, 152.4]
+
+[[stock]]
+id = "center-7in"
+name = "7″ single centre label (circle on 4×6″)"
+media = "die_cut"
+design_mm = [101.6, 152.4]
+feed_mm = [101.6, 152.4]
+round = true
+# Used only when neither the template option nor the record's format gives a disc size.
+extra = { disc_mm = 90.0, hole_mm = 38.0 }
+
+[[stock]]
+id = "obi-legal"
+name = "OBI strip, full LP (2 per Legal sheet)"
+media = "sheet"
+design_mm = [98.425, 311.15]
+feed_mm = [215.9, 355.6]
+sheet = { paper_mm = [215.9, 355.6], rows = 1, cols = 2, margin_mm = [6.35, 6.35], pitch_mm = [104.775, 321.31], cell_mm = [98.425, 311.15] }
+
+[[stock]]
+id = "obi-mini-letter"
+name = "OBI strip, mini (4 per Letter sheet)"
+media = "sheet"
+design_mm = [98.425, 103.717]
+feed_mm = [215.9, 279.4]
+sheet = { paper_mm = [215.9, 279.4], rows = 2, cols = 2, margin_mm = [6.35, 6.35], pitch_mm = [104.775, 113.877], cell_mm = [98.425, 103.717] }

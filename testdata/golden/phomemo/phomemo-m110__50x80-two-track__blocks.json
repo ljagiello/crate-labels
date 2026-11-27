@@ -1,0 +1,34 @@
+{
+  "model": "phomemo-m110",
+  "stock": "50x80-two-track",
+  "block_rows": 240,
+  "canvas": [
+    640,
+    384
+  ],
+  "turn_cw": 90,
+  "width": 384,
+  "lane": [
+    0,
+    384
+  ],
+  "image": [
+    0,
+    0,
+    384,
+    640
+  ],
+  "rows": 640,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m110__50x80-two-track__blocks.job0.bin",
+      "bytes": 30763,
+      "rows": 640,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m110__50x80-two-track__blocks.preview.pgm"
+}

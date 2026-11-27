@@ -1,0 +1,7848 @@
+{
+ "version": [
+  1,
+  1
+ ],
+ "code": "0x0000",
+ "request_id": 1,
+ "groups": [
+  {
+   "tag": "0x01",
+   "attributes": [
+    {
+     "name": "attributes-charset",
+     "values": [
+      {
+       "tag": "0x47",
+       "value": "utf-8"
+      }
+     ]
+    },
+    {
+     "name": "attributes-natural-language",
+     "values": [
+      {
+       "tag": "0x48",
+       "value": "en"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "0x04",
+   "attributes": [
+    {
+     "name": "copies-default",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "finishings-default",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 3
+      }
+     ]
+    },
+    {
+     "name": "media-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "na_letter_8.5x11in"
+      }
+     ]
+    },
+    {
+     "name": "media-col-default",
+     "values": [
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "auto"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "orientation-requested-default",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 3
+      }
+     ]
+    },
+    {
+     "name": "output-bin-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "face-down"
+      }
+     ]
+    },
+    {
+     "name": "output-mode-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "color"
+      }
+     ]
+    },
+    {
+     "name": "print-quality-default",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 4
+      }
+     ]
+    },
+    {
+     "name": "printer-resolution-default",
+     "values": [
+      {
+       "tag": "0x32",
+       "resolution": {
+        "x": 600,
+        "y": 600,
+        "units": 3
+       }
+      }
+     ]
+    },
+    {
+     "name": "sides-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "one-sided"
+      }
+     ]
+    },
+    {
+     "name": "print-color-mode-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "color"
+      }
+     ]
+    },
+    {
+     "name": "print-content-optimize-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      }
+     ]
+    },
+    {
+     "name": "print-scaling-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      }
+     ]
+    },
+    {
+     "name": "copies-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        1,
+        99
+       ]
+      }
+     ]
+    },
+    {
+     "name": "finishings-supported",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 3
+      }
+     ]
+    },
+    {
+     "name": "media-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "iso_a4_210x297mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_letter_8.5x11in"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_legal_8.5x14in"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_executive_7.25x10.5in"
+      },
+      {
+       "tag": "0x44",
+       "value": "iso_a5_148x210mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "iso_a6_105x148mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "iso_b5_176x250mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_number-10_4.125x9.5in"
+      },
+      {
+       "tag": "0x44",
+       "value": "iso_dl_110x220mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "iso_c5_162x229mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_monarch_3.875x7.5in"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_index-3x5_3x5in"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_foolscap_8.5x13in"
+      },
+      {
+       "tag": "0x44",
+       "value": "na_oficio_8.5x13.4in"
+      },
+      {
+       "tag": "0x44",
+       "value": "om_india-legal_215x345mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "custom_min_76.2x127mm"
+      },
+      {
+       "tag": "0x44",
+       "value": "custom_max_215.9x355.6mm"
+      }
+     ]
+    },
+    {
+     "name": "media-col-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "media-type"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-size"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-top-margin"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-left-margin"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-right-margin"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-bottom-margin"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-source"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-auto-dimension"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-source-propaties"
+      }
+     ]
+    },
+    {
+     "name": "orientation-requested-supported",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 3
+      },
+      {
+       "tag": "0x23",
+       "value": 4
+      }
+     ]
+    },
+    {
+     "name": "output-bin-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "face-down"
+      }
+     ]
+    },
+    {
+     "name": "output-mode-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "color"
+      },
+      {
+       "tag": "0x44",
+       "value": "auto"
+      },
+      {
+       "tag": "0x44",
+       "value": "auto-monochrome"
+      },
+      {
+       "tag": "0x44",
+       "value": "monochrome"
+      }
+     ]
+    },
+    {
+     "name": "print-quality-supported",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 4
+      }
+     ]
+    },
+    {
+     "name": "printer-resolution-supported",
+     "values": [
+      {
+       "tag": "0x32",
+       "resolution": {
+        "x": 600,
+        "y": 600,
+        "units": 3
+       }
+      }
+     ]
+    },
+    {
+     "name": "sides-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "one-sided"
+      },
+      {
+       "tag": "0x44",
+       "value": "two-sided-long-edge"
+      },
+      {
+       "tag": "0x44",
+       "value": "two-sided-short-edge"
+      }
+     ]
+    },
+    {
+     "name": "print-color-mode-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      },
+      {
+       "tag": "0x44",
+       "value": "color"
+      },
+      {
+       "tag": "0x44",
+       "value": "monochrome"
+      },
+      {
+       "tag": "0x44",
+       "value": "auto-monochrome"
+      }
+     ]
+    },
+    {
+     "name": "print-content-optimize-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      }
+     ]
+    },
+    {
+     "name": "print-scaling-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      },
+      {
+       "tag": "0x44",
+       "value": "auto-fit"
+      },
+      {
+       "tag": "0x44",
+       "value": "fill"
+      },
+      {
+       "tag": "0x44",
+       "value": "fit"
+      },
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "generated-natural-language-supported",
+     "values": [
+      {
+       "tag": "0x48",
+       "value": "en"
+      },
+      {
+       "tag": "0x48",
+       "value": "fr"
+      },
+      {
+       "tag": "0x48",
+       "value": "de"
+      },
+      {
+       "tag": "0x48",
+       "value": "es"
+      },
+      {
+       "tag": "0x48",
+       "value": "pt"
+      },
+      {
+       "tag": "0x48",
+       "value": "it"
+      },
+      {
+       "tag": "0x48",
+       "value": "nl"
+      },
+      {
+       "tag": "0x48",
+       "value": "no"
+      },
+      {
+       "tag": "0x48",
+       "value": "sv"
+      },
+      {
+       "tag": "0x48",
+       "value": "fi"
+      },
+      {
+       "tag": "0x48",
+       "value": "da"
+      },
+      {
+       "tag": "0x48",
+       "value": "ru"
+      },
+      {
+       "tag": "0x48",
+       "value": "cs"
+      },
+      {
+       "tag": "0x48",
+       "value": "hu"
+      },
+      {
+       "tag": "0x48",
+       "value": "pl"
+      },
+      {
+       "tag": "0x48",
+       "value": "bg"
+      },
+      {
+       "tag": "0x48",
+       "value": "ro"
+      },
+      {
+       "tag": "0x48",
+       "value": "sk"
+      },
+      {
+       "tag": "0x48",
+       "value": "sl"
+      },
+      {
+       "tag": "0x48",
+       "value": "hr"
+      },
+      {
+       "tag": "0x48",
+       "value": "tr"
+      },
+      {
+       "tag": "0x48",
+       "value": "id"
+      }
+     ]
+    },
+    {
+     "name": "printer-uri-supported",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "ipp://198.51.100.9/ipp/print"
+      }
+     ]
+    },
+    {
+     "name": "uri-security-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "uri-authentication-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "printer-name",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "BRW0123456789AB"
+      }
+     ]
+    },
+    {
+     "name": "printer-location",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": ""
+      }
+     ]
+    },
+    {
+     "name": "printer-info",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "Brother HL-L3290CDW series"
+      }
+     ]
+    },
+    {
+     "name": "printer-make-and-model",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "Brother HL-L3290CDW series"
+      }
+     ]
+    },
+    {
+     "name": "printer-state",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 3
+      }
+     ]
+    },
+    {
+     "name": "printer-state-reasons",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "ipp-versions-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "1.0"
+      },
+      {
+       "tag": "0x44",
+       "value": "1.1"
+      },
+      {
+       "tag": "0x44",
+       "value": "2.0"
+      }
+     ]
+    },
+    {
+     "name": "operations-supported",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 2
+      },
+      {
+       "tag": "0x23",
+       "value": 4
+      },
+      {
+       "tag": "0x23",
+       "value": 5
+      },
+      {
+       "tag": "0x23",
+       "value": 6
+      },
+      {
+       "tag": "0x23",
+       "value": 8
+      },
+      {
+       "tag": "0x23",
+       "value": 9
+      },
+      {
+       "tag": "0x23",
+       "value": 10
+      },
+      {
+       "tag": "0x23",
+       "value": 11
+      },
+      {
+       "tag": "0x23",
+       "value": 59
+      },
+      {
+       "tag": "0x23",
+       "value": 60
+      }
+     ]
+    },
+    {
+     "name": "multiple-document-jobs-supported",
+     "values": [
+      {
+       "tag": "0x22",
+       "value": false
+      }
+     ]
+    },
+    {
+     "name": "multiple-operation-time-out",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 150
+      }
+     ]
+    },
+    {
+     "name": "natural-language-configured",
+     "values": [
+      {
+       "tag": "0x48",
+       "value": "en"
+      }
+     ]
+    },
+    {
+     "name": "charset-configured",
+     "values": [
+      {
+       "tag": "0x47",
+       "value": "utf-8"
+      }
+     ]
+    },
+    {
+     "name": "charset-supported",
+     "values": [
+      {
+       "tag": "0x47",
+       "value": "utf-8"
+      }
+     ]
+    },
+    {
+     "name": "document-format-supported",
+     "values": [
+      {
+       "tag": "0x49",
+       "value": "application/octet-stream"
+      },
+      {
+       "tag": "0x49",
+       "value": "image/urf"
+      },
+      {
+       "tag": "0x49",
+       "value": "image/jpeg"
+      },
+      {
+       "tag": "0x49",
+       "value": "image/pwg-raster"
+      }
+     ]
+    },
+    {
+     "name": "document-format-default",
+     "values": [
+      {
+       "tag": "0x49",
+       "value": "application/octet-stream"
+      }
+     ]
+    },
+    {
+     "name": "printer-is-accepting-jobs",
+     "values": [
+      {
+       "tag": "0x22",
+       "value": true
+      }
+     ]
+    },
+    {
+     "name": "queued-job-count",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "name": "pdl-override-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "attempted"
+      }
+     ]
+    },
+    {
+     "name": "printer-up-time",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 5826479
+      }
+     ]
+    },
+    {
+     "name": "compression-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      },
+      {
+       "tag": "0x44",
+       "value": "gzip"
+      }
+     ]
+    },
+    {
+     "name": "color-supported",
+     "values": [
+      {
+       "tag": "0x22",
+       "value": true
+      }
+     ]
+    },
+    {
+     "name": "job-creation-attributes-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "copies"
+      },
+      {
+       "tag": "0x44",
+       "value": "finishings"
+      },
+      {
+       "tag": "0x44",
+       "value": "ipp-attribute-fidelity"
+      },
+      {
+       "tag": "0x44",
+       "value": "job-name"
+      },
+      {
+       "tag": "0x44",
+       "value": "media"
+      },
+      {
+       "tag": "0x44",
+       "value": "media-col"
+      },
+      {
+       "tag": "0x44",
+       "value": "orientation-requested"
+      },
+      {
+       "tag": "0x44",
+       "value": "output-bin"
+      },
+      {
+       "tag": "0x44",
+       "value": "output-mode"
+      },
+      {
+       "tag": "0x44",
+       "value": "print-quality"
+      },
+      {
+       "tag": "0x44",
+       "value": "printer-resolution"
+      },
+      {
+       "tag": "0x44",
+       "value": "requesting-user-name"
+      },
+      {
+       "tag": "0x44",
+       "value": "sides"
+      },
+      {
+       "tag": "0x44",
+       "value": "print-color-mode"
+      }
+     ]
+    },
+    {
+     "name": "media-bottom-margin-supported",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 432
+      }
+     ]
+    },
+    {
+     "name": "media-left-margin-supported",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 432
+      }
+     ]
+    },
+    {
+     "name": "media-right-margin-supported",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 432
+      }
+     ]
+    },
+    {
+     "name": "media-source-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "auto"
+      },
+      {
+       "tag": "0x44",
+       "value": "manual"
+      },
+      {
+       "tag": "0x44",
+       "value": "tray-1"
+      }
+     ]
+    },
+    {
+     "name": "media-top-margin-supported",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 432
+      }
+     ]
+    },
+    {
+     "name": "media-type-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "stationery"
+      },
+      {
+       "tag": "0x44",
+       "value": "stationery-lightweight"
+      },
+      {
+       "tag": "0x44",
+       "value": "stationery-heavyweight"
+      },
+      {
+       "tag": "0x44",
+       "value": "envelope"
+      },
+      {
+       "tag": "0x44",
+       "value": "envelope-heavyweight"
+      },
+      {
+       "tag": "0x44",
+       "value": "envelope-lightweight"
+      },
+      {
+       "tag": "0x44",
+       "value": "labels"
+      },
+      {
+       "tag": "0x44",
+       "value": "photographic-glossy"
+      },
+      {
+       "tag": "0x44",
+       "value": "stationery-bond"
+      },
+      {
+       "tag": "0x44",
+       "value": "com.brother.thicker"
+      },
+      {
+       "tag": "0x44",
+       "value": "com.brother.recycled"
+      }
+     ]
+    },
+    {
+     "name": "media-size-supported",
+     "values": [
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21000
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 29700
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21590
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 27940
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21590
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 35560
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 18415
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 26670
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 14800
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21000
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 10500
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 14800
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 17600
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 25000
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 10477
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 24130
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 11000
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 22000
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 16200
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 22900
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 9842
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 19050
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 7620
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 12700
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21590
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 33020
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21590
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 34036
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 21500
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 34500
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "x-dimension",
+         "values": [
+          {
+           "tag": "0x33",
+           "range": [
+            7620,
+            21590
+           ]
+          }
+         ]
+        },
+        {
+         "name": "y-dimension",
+         "values": [
+          {
+           "tag": "0x33",
+           "range": [
+            12700,
+            35560
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "pages-per-minute",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 24
+      }
+     ]
+    },
+    {
+     "name": "pages-per-minute-color",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 24
+      }
+     ]
+    },
+    {
+     "name": "printer-alert",
+     "values": [
+      {
+       "tag": "0x30",
+       "hex": "636f64653d6f74686572"
+      }
+     ]
+    },
+    {
+     "name": "printer-alert-description",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "Sleep"
+      }
+     ]
+    },
+    {
+     "name": "printer-device-id",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "MFG:Brother;CMD:PJL,PCL,PCLXL,URF;MDL:HL-L3290CDW series;CLS:PRINTER;CID:Brother Generic Jpeg Type2;URF:SRGB24,W8,CP1,IS4-1,MT1-3-4-5-8-11,OB10,PQ4,RS600,V1.4,DM1;"
+      }
+     ]
+    },
+    {
+     "name": "printer-icons",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "http://198.51.100.9/ipp/printer-icons-128.png"
+      },
+      {
+       "tag": "0x45",
+       "value": "http://198.51.100.9/ipp/printer-icons-512.png"
+      }
+     ]
+    },
+    {
+     "name": "printer-more-info",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "http://198.51.100.9/net/net/airprint.html"
+      }
+     ]
+    },
+    {
+     "name": "printer-uuid",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "urn:uuid:e3248000-80ce-11db-8000-0123456789ab"
+      }
+     ]
+    },
+    {
+     "name": "job-impressions-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        1,
+        999
+       ]
+      }
+     ]
+    },
+    {
+     "name": "printer-geo-location",
+     "values": [
+      {
+       "tag": "0x12",
+       "out_of_band": true
+      }
+     ]
+    },
+    {
+     "name": "printer-supply-info-uri",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "http://198.51.100.9/general/status.html"
+      }
+     ]
+    },
+    {
+     "name": "media-ready",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "na_letter_8.5x11in"
+      }
+     ]
+    },
+    {
+     "name": "media-col-ready",
+     "values": [
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "identify-actions-default",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "flash"
+      },
+      {
+       "tag": "0x44",
+       "value": "sound"
+      }
+     ]
+    },
+    {
+     "name": "identify-actions-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "flash"
+      },
+      {
+       "tag": "0x44",
+       "value": "sound"
+      }
+     ]
+    },
+    {
+     "name": "ipp-features-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "airprint-1.8"
+      },
+      {
+       "tag": "0x44",
+       "value": "wfds-print-1.0"
+      }
+     ]
+    },
+    {
+     "name": "printer-input-tray",
+     "values": [
+      {
+       "tag": "0x30",
+       "hex": "747970653d6f746865723b6d65646961666565643d3237393430303b6d6564696178666565643d3231353930303b6d617863617061636974793d3235303b6c6576656c3d2d333b7374617475733d303b6e616d653d4155544f3b696e6465783d313b64696d756e69743d6d6963726f6d65746572733b756e69743d7368656574733b6d656469616e616d653d5448494e3b6d656469617765696768743d2d323b6d65646961747970653d556e6b6e6f776e3b6d65646961636f6c6f723d556e6b6e6f776e3b"
+      },
+      {
+       "tag": "0x30",
+       "hex": "747970653d7368656574466565644d616e75616c3b6d65646961666565643d2d323b6d6564696178666565643d2d323b6d617863617061636974793d313b6c6576656c3d2d333b7374617475733d303b6e616d653d4d414e55414c20545241593b696e6465783d323b64696d756e69743d6d6963726f6d65746572733b756e69743d7368656574733b6d656469616e616d653d5448494e3b6d656469617765696768743d2d323b6d65646961747970653d556e6b6e6f776e3b6d65646961636f6c6f723d556e6b6e6f776e3b"
+      },
+      {
+       "tag": "0x30",
+       "hex": "747970653d7368656574466565644175746f4e6f6e52656d6f7661626c65547261793b6d65646961666565643d3237393430303b6d6564696178666565643d3231353930303b6d617863617061636974793d3235303b6c6576656c3d2d333b7374617475733d303b6e616d653d54524159313b696e6465783d333b64696d756e69743d6d6963726f6d65746572733b756e69743d7368656574733b6d656469616e616d653d524547554c41523b6d656469617765696768743d2d323b6d65646961747970653d556e6b6e6f776e3b6d65646961636f6c6f723d556e6b6e6f776e3b"
+      }
+     ]
+    },
+    {
+     "name": "printer-output-tray",
+     "values": [
+      {
+       "tag": "0x30",
+       "hex": "747970653d756e52656d6f7661626c6542696e3b6d617863617061636974793d2d323b72656d61696e696e673d2d323b7374617475733d303b6e616d653d666163652d646f776e3b696e6465783d313b756e69743d7368656574733b737461636b696e676f726465723d6669727374546f4c6173743b7061676564656c69766572793d6e6f7450726573656e743b6f6666736574737461636b696e673d6e6f7450726573656e743b"
+      }
+     ]
+    },
+    {
+     "name": "print_wfds",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "T"
+      }
+     ]
+    },
+    {
+     "name": "document-format-varying-attributes",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "copies"
+      }
+     ]
+    },
+    {
+     "name": "multiple-operation-time-out-action",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "abort-job"
+      }
+     ]
+    },
+    {
+     "name": "printer-organization",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": ""
+      }
+     ]
+    },
+    {
+     "name": "printer-organizational-unit",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": ""
+      }
+     ]
+    },
+    {
+     "name": "printer-get-attributes-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "document-format"
+      }
+     ]
+    },
+    {
+     "name": "which-jobs-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "completed"
+      },
+      {
+       "tag": "0x44",
+       "value": "not_completed"
+      }
+     ]
+    },
+    {
+     "name": "printer-current-time",
+     "values": [
+      {
+       "tag": "0x31",
+       "hex": "07ea0b19152b28002d002c"
+      }
+     ]
+    },
+    {
+     "name": "printer-config-change-time",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "printer-config-change-date-time",
+     "values": [
+      {
+       "tag": "0x31",
+       "hex": "07ea09130c090d002d002c"
+      }
+     ]
+    },
+    {
+     "name": "printer-state-change-time",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 3360666
+      }
+     ]
+    },
+    {
+     "name": "printer-state-change-date-time",
+     "values": [
+      {
+       "tag": "0x31",
+       "hex": "07ea0a1c092c1e002d002c"
+      }
+     ]
+    },
+    {
+     "name": "printer-strings-languages-supported",
+     "values": [
+      {
+       "tag": "0x48",
+       "value": "en"
+      },
+      {
+       "tag": "0x48",
+       "value": "fr"
+      },
+      {
+       "tag": "0x48",
+       "value": "de"
+      },
+      {
+       "tag": "0x48",
+       "value": "es"
+      },
+      {
+       "tag": "0x48",
+       "value": "it"
+      },
+      {
+       "tag": "0x48",
+       "value": "nl"
+      },
+      {
+       "tag": "0x48",
+       "value": "nb"
+      },
+      {
+       "tag": "0x48",
+       "value": "sv"
+      },
+      {
+       "tag": "0x48",
+       "value": "fi"
+      },
+      {
+       "tag": "0x48",
+       "value": "da"
+      },
+      {
+       "tag": "0x48",
+       "value": "ru"
+      },
+      {
+       "tag": "0x48",
+       "value": "cs"
+      },
+      {
+       "tag": "0x48",
+       "value": "hu"
+      },
+      {
+       "tag": "0x48",
+       "value": "pl"
+      },
+      {
+       "tag": "0x48",
+       "value": "ro"
+      },
+      {
+       "tag": "0x48",
+       "value": "sk"
+      },
+      {
+       "tag": "0x48",
+       "value": "hr"
+      },
+      {
+       "tag": "0x48",
+       "value": "tr"
+      },
+      {
+       "tag": "0x48",
+       "value": "id"
+      }
+     ]
+    },
+    {
+     "name": "printer-strings-uri",
+     "values": [
+      {
+       "tag": "0x45",
+       "value": "http://198.51.100.9/ipp/strings/dict/en.txt"
+      }
+     ]
+    },
+    {
+     "name": "printer-mandatory-job-attributes",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "attributes-charset"
+      },
+      {
+       "tag": "0x44",
+       "value": "attributes-natural-language"
+      },
+      {
+       "tag": "0x44",
+       "value": "printer-uri"
+      }
+     ]
+    },
+    {
+     "name": "landscape-orientation-requested-preferred",
+     "values": [
+      {
+       "tag": "0x23",
+       "value": 5
+      }
+     ]
+    },
+    {
+     "name": "marker-colors",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "#000000"
+      },
+      {
+       "tag": "0x42",
+       "value": "#00FFFF"
+      },
+      {
+       "tag": "0x42",
+       "value": "#FF00FF"
+      },
+      {
+       "tag": "0x42",
+       "value": "#FFFF00"
+      }
+     ]
+    },
+    {
+     "name": "marker-high-levels",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 100
+      },
+      {
+       "tag": "0x21",
+       "value": 100
+      },
+      {
+       "tag": "0x21",
+       "value": 100
+      },
+      {
+       "tag": "0x21",
+       "value": 100
+      }
+     ]
+    },
+    {
+     "name": "marker-levels",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 40
+      },
+      {
+       "tag": "0x21",
+       "value": 30
+      },
+      {
+       "tag": "0x21",
+       "value": 30
+      },
+      {
+       "tag": "0x21",
+       "value": 20
+      }
+     ]
+    },
+    {
+     "name": "marker-low-levels",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 10
+      },
+      {
+       "tag": "0x21",
+       "value": 10
+      },
+      {
+       "tag": "0x21",
+       "value": 10
+      },
+      {
+       "tag": "0x21",
+       "value": 10
+      }
+     ]
+    },
+    {
+     "name": "marker-names",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "BK"
+      },
+      {
+       "tag": "0x42",
+       "value": "C"
+      },
+      {
+       "tag": "0x42",
+       "value": "M"
+      },
+      {
+       "tag": "0x42",
+       "value": "Y"
+      }
+     ]
+    },
+    {
+     "name": "marker-types",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "toner"
+      },
+      {
+       "tag": "0x44",
+       "value": "toner"
+      },
+      {
+       "tag": "0x44",
+       "value": "toner"
+      },
+      {
+       "tag": "0x44",
+       "value": "toner"
+      }
+     ]
+    },
+    {
+     "name": "pdf-versions-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "printer-dns-sd-name",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "Brother HL-L3290CDW series"
+      }
+     ]
+    },
+    {
+     "name": "printer-firmware-name",
+     "values": [
+      {
+       "tag": "0x42",
+       "value": "MAIN"
+      },
+      {
+       "tag": "0x42",
+       "value": "SUB1"
+      },
+      {
+       "tag": "0x42",
+       "value": "SUB5"
+      }
+     ]
+    },
+    {
+     "name": "printer-firmware-string-version",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "ZD2512050358:3155"
+      },
+      {
+       "tag": "0x41",
+       "value": "1.60"
+      },
+      {
+       "tag": "0x41",
+       "value": "1.00"
+      }
+     ]
+    },
+    {
+     "name": "printer-firmware-version",
+     "values": [
+      {
+       "tag": "0x30",
+       "hex": "5a44323531323035303335383a33313535"
+      },
+      {
+       "tag": "0x30",
+       "hex": "312e3630"
+      },
+      {
+       "tag": "0x30",
+       "hex": "312e3030"
+      }
+     ]
+    },
+    {
+     "name": "printer-kind",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "document"
+      },
+      {
+       "tag": "0x44",
+       "value": "envelope"
+      },
+      {
+       "tag": "0x44",
+       "value": "label"
+      },
+      {
+       "tag": "0x44",
+       "value": "postcard"
+      }
+     ]
+    },
+    {
+     "name": "urf-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "SRGB24"
+      },
+      {
+       "tag": "0x44",
+       "value": "W8"
+      },
+      {
+       "tag": "0x44",
+       "value": "CP1"
+      },
+      {
+       "tag": "0x44",
+       "value": "IS4-1"
+      },
+      {
+       "tag": "0x44",
+       "value": "MT1-3-4-5-8-11"
+      },
+      {
+       "tag": "0x44",
+       "value": "OB10"
+      },
+      {
+       "tag": "0x44",
+       "value": "PQ4"
+      },
+      {
+       "tag": "0x44",
+       "value": "RS600"
+      },
+      {
+       "tag": "0x44",
+       "value": "V1.4"
+      },
+      {
+       "tag": "0x44",
+       "value": "DM1"
+      }
+     ]
+    },
+    {
+     "name": "document-format-preferred",
+     "values": [
+      {
+       "tag": "0x49",
+       "value": "image/urf"
+      }
+     ]
+    },
+    {
+     "name": "jpeg-k-octets-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        0,
+        16384
+       ]
+      }
+     ]
+    },
+    {
+     "name": "jpeg-x-dimension-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        0,
+        15000
+       ]
+      }
+     ]
+    },
+    {
+     "name": "jpeg-y-dimension-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        1,
+        15000
+       ]
+      }
+     ]
+    },
+    {
+     "name": "jpeg-features-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "mopria-certified",
+     "values": [
+      {
+       "tag": "0x41",
+       "value": "1.3"
+      }
+     ]
+    },
+    {
+     "name": "pwg-raster-document-resolution-supported",
+     "values": [
+      {
+       "tag": "0x32",
+       "resolution": {
+        "x": 600,
+        "y": 600,
+        "units": 3
+       }
+      }
+     ]
+    },
+    {
+     "name": "pwg-raster-document-sheet-back",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "rotated"
+      }
+     ]
+    },
+    {
+     "name": "pwg-raster-document-type-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "sgray_8"
+      },
+      {
+       "tag": "0x44",
+       "value": "srgb_8"
+      }
+     ]
+    },
+    {
+     "name": "job-password-supported",
+     "values": [
+      {
+       "tag": "0x21",
+       "value": 4
+      }
+     ]
+    },
+    {
+     "name": "job-password-length-supported",
+     "values": [
+      {
+       "tag": "0x33",
+       "range": [
+        4,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "name": "job-password-encryption-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "none"
+      }
+     ]
+    },
+    {
+     "name": "job-password-repertoire-supported",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "iana_us-ascii_digits"
+      }
+     ]
+    },
+    {
+     "name": "job-password-repertoire-configured",
+     "values": [
+      {
+       "tag": "0x44",
+       "value": "iana_us-ascii_digits"
+      }
+     ]
+    },
+    {
+     "name": "media-col-database",
+     "values": [
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 29700
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 35560
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 18415
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 26670
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 10500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 33020
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34036
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34500
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "long-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 29700
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 35560
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 18415
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 26670
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 10500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 33020
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34036
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34500
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "stationery-heavyweight"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "long-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 29700
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 35560
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 18415
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 26670
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 10500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 33020
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34036
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34500
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-type",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "com.brother.recycled"
+          }
+         ]
+        },
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "tray-1"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "long-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 29700
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 27940
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 35560
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 18415
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 26670
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 10500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 14800
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 17600
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 25000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 10477
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 24130
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 11000
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 22000
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 16200
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 22900
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 9842
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 19050
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 7620
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 12700
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 33020
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21590
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34036
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tag": "0x34",
+       "collection": [
+        {
+         "name": "media-size",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "x-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 21500
+              }
+             ]
+            },
+            {
+             "name": "y-dimension",
+             "values": [
+              {
+               "tag": "0x21",
+               "value": 34500
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "name": "media-bottom-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-left-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-right-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-top-margin",
+         "values": [
+          {
+           "tag": "0x21",
+           "value": 432
+          }
+         ]
+        },
+        {
+         "name": "media-source",
+         "values": [
+          {
+           "tag": "0x44",
+           "value": "manual"
+          }
+         ]
+        },
+        {
+         "name": "media-auto-dimension",
+         "values": [
+          {
+           "tag": "0x22",
+           "value": false
+          }
+         ]
+        },
+        {
+         "name": "media-source-properties",
+         "values": [
+          {
+           "tag": "0x34",
+           "collection": [
+            {
+             "name": "media-source-feed-direction",
+             "values": [
+              {
+               "tag": "0x44",
+               "value": "short-edge-first"
+              }
+             ]
+            },
+            {
+             "name": "media-source-feed-orientation",
+             "values": [
+              {
+               "tag": "0x23",
+               "value": 3
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "data_length": 0
+}

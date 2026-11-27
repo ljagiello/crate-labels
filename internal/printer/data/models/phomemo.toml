@@ -1,0 +1,71 @@
+# Phomemo thermal label printers (BLE service FF00).
+# A new Phomemo-protocol model is usually just another [[model]] block here.
+#
+# options.hello_frames lists, as hex, the notifications a model may send as soon as the
+# host subscribes. A frame may appear under several models. The model saved for a
+# printer always decides; the hello only helps identify a new printer during setup,
+# and is reported when it disagrees with the saved model.
+#
+# name_patterns are case-insensitive regular expressions for the advertised name; the
+# built-in ones find the model number at the start of the name or after any character
+# that is not a letter or digit. They are only a fallback: a scan first goes by the
+# advertised service UUID.
+
+[[model]]
+id = "phomemo-m110"
+label = "Phomemo M110"
+family = "phomemo"
+link = "ble"
+dpi = 203.2
+head_dots = 384
+paper_width_mm = [20, 50]
+stocks = ["50x80-two-track", "50x30", "40x30"]
+# Firmware before version 2 cannot print a tall raster sent as one block, so it gets
+# GS v 0 blocks of at most 240 rows.
+options = { speed = 3, darkness = 8, paper_align = "right", hello_frames = ["0101", "0107"], legacy_firmware = "2", legacy_block_rows = 240 }
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])m110']
+service = "0000ff00-0000-1000-8000-00805f9b34fb"
+write = { data = "0000ff02-0000-1000-8000-00805f9b34fb" }
+notify = "0000ff03-0000-1000-8000-00805f9b34fb"
+chunk_bytes = 128
+chunk_gap_ms = 20
+
+[[model]]
+id = "phomemo-m220"
+label = "Phomemo M220"
+family = "phomemo"
+link = "ble"
+dpi = 203.2
+head_dots = 560
+paper_width_mm = [20, 70]
+stocks = ["50x80-two-track", "50x30", "40x30", "70x80"]
+options = { speed = 3, darkness = 8, paper_align = "right", hello_frames = ["0107"] }
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])m220']
+service = "0000ff00-0000-1000-8000-00805f9b34fb"
+write = { data = "0000ff02-0000-1000-8000-00805f9b34fb" }
+notify = "0000ff03-0000-1000-8000-00805f9b34fb"
+chunk_bytes = 128
+chunk_gap_ms = 20
+
+[[model]]
+id = "phomemo-d30"
+label = "Phomemo D30"
+family = "phomemo"
+link = "ble"
+dpi = 203.2
+head_dots = 96
+paper_width_mm = [12, 15]
+stocks = ["d30-15mm-tape", "15x50"]
+options = { speed = 3, darkness = 8, paper_align = "center", hello_frames = ["0101"] }
+
+[model.ble]
+name_patterns = ['(?:^|[^a-z0-9])d30']
+service = "0000ff00-0000-1000-8000-00805f9b34fb"
+write = { data = "0000ff02-0000-1000-8000-00805f9b34fb" }
+notify = "0000ff03-0000-1000-8000-00805f9b34fb"
+chunk_bytes = 128
+chunk_gap_ms = 20

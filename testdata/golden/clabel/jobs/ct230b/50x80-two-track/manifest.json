@@ -1,0 +1,52 @@
+{
+ "what": "clabel-ct230b on 50x80-two-track",
+ "model": {
+  "id": "clabel-ct230b",
+  "dpi": 300,
+  "head_dots": 568,
+  "options": {
+   "fixed_edge_mm": 0,
+   "speed": 2,
+   "write_settings": false
+  },
+  "chunk_bytes": 200,
+  "chunk_gap_ms": 5
+ },
+ "stock": {
+  "id": "50x80-two-track",
+  "media": "die_cut",
+  "design_mm": [
+   80,
+   48
+  ],
+  "feed_mm": [
+   50,
+   80
+  ],
+  "rotate_cw": 90
+ },
+ "settings": {},
+ "input": "input.png",
+ "preview": "preview.png",
+ "canvas": {
+  "Width": 945,
+  "Height": 567,
+  "DPI": 300
+ },
+ "layout": {
+  "WidthDots": 568,
+  "ContentDots": 545,
+  "OffsetDots": 23,
+  "Rows": 945
+ },
+ "rated_dpi": 300,
+ "pages": [
+  {
+   "text": "page-01.txt",
+   "raster": "page-01-raster.bin",
+   "rows": 945,
+   "paper": 0,
+   "print_ms": 4335
+  }
+ ]
+}

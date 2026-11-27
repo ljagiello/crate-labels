@@ -1,0 +1,36 @@
+{
+  "model": "phomemo-m110",
+  "stock": "50x30",
+  "settings": {
+    "extra_rotate_cw": 180
+  },
+  "canvas": [
+    384,
+    240
+  ],
+  "turn_cw": 180,
+  "width": 384,
+  "lane": [
+    0,
+    384
+  ],
+  "image": [
+    0,
+    0,
+    384,
+    240
+  ],
+  "rows": 240,
+  "media": 10,
+  "skip_feed": false,
+  "tail_rows": 0,
+  "jobs": [
+    {
+      "file": "phomemo-m110__50x30__rot180.job0.bin",
+      "bytes": 11547,
+      "rows": 240,
+      "pause_ms": 3000
+    }
+  ],
+  "preview": "phomemo-m110__50x30__rot180.preview.pgm"
+}
