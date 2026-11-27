@@ -42,13 +42,15 @@ const (
 	// DefaultCrateRecordsMax matches the most records one print job takes
 	// (service.MaxItems), so "print the whole crate" always fits in a single job.
 	DefaultCrateRecordsMax = 500
-	DefaultCacheMaxAge     = 31 * 24 * time.Hour // the longest response TTL is 30 days
-	DefaultCacheMaxBytes   = 64 << 20
-	DefaultImageMaxAge     = 90 * 24 * time.Hour
-	DefaultImageMaxBytes   = 256 << 20
-	DefaultTempoMaxAge     = 365 * 24 * time.Hour // a tempo does not go stale; files move
-	DefaultTempoMaxBytes   = 8 << 20              // ~25,000 results
-	pruneEvery             = 64                   // cache writes between prunes
+	// Discogs answers and images go after six hours (discogs.MaxContentAge): the Discogs
+	// API Terms of Use bar keeping them longer than the app needs them.
+	DefaultCacheMaxAge   = 6 * time.Hour
+	DefaultCacheMaxBytes = 64 << 20
+	DefaultImageMaxAge   = 6 * time.Hour
+	DefaultImageMaxBytes = 256 << 20
+	DefaultTempoMaxAge   = 365 * 24 * time.Hour // a tempo does not go stale; files move
+	DefaultTempoMaxBytes = 8 << 20              // ~25,000 results
+	pruneEvery           = 64                   // cache writes between prunes
 )
 
 // schemaV1 is the whole first schema. Later versions append a step to migrations; a
@@ -531,10 +533,10 @@ func (s *Store) CachePut(ctx context.Context, url string, body []byte) error {
 	return err
 }
 
-// ImageGet returns a cached image.
+// ImageGet returns a cached image no older than ImageMaxAge.
 func (s *Store) ImageGet(ctx context.Context, url string) (contentType string, body []byte, ok bool, err error) {
-	err = s.db.QueryRowContext(ctx, "SELECT content_type, body FROM image_cache WHERE url = ?", url).
-		Scan(&contentType, &body)
+	err = s.db.QueryRowContext(ctx, "SELECT content_type, body FROM image_cache WHERE url = ? AND fetched_at >= ?",
+		url, s.nowMS()-s.ImageMaxAge.Milliseconds()).Scan(&contentType, &body)
 	if errors.Is(err, sql.ErrNoRows) {
 		return "", nil, false, nil
 	}

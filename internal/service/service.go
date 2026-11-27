@@ -113,6 +113,10 @@ func New(cfg Config) *Service {
 		s.Discogs = discogs.NewClient(s.Tokens.Token, nil)
 		s.Discogs.Cache, s.Discogs.Images, s.Discogs.Log = s.Store, s.Store, s.Log
 	}
+	if s.Discogs.UserAgent == "" || s.Discogs.UserAgent == discogs.DefaultUserAgent {
+		// Discogs asks every client to name itself and its version.
+		s.Discogs.UserAgent = "crate-labels/" + Version
+	}
 	if s.Discogs.OnUnauthorized == nil {
 		// On a 401, re-read the Keychain: another process may have set or cleared the token.
 		s.Discogs.OnUnauthorized = func(context.Context) {

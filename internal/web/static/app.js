@@ -75,6 +75,28 @@ const looksLikeRef = (t) => /^\s*\[?[rm]?\d{1,10}\]?\s*$/i.test(t) || /discogs\.
 const thumbSrc = (url) => (url ? `/api/discogs/image?url=${enc(url)}` : "");
 const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
+// The Discogs API Terms of Use require this notice next to data from the API, linked to
+// the discogs.com page that shows that data (and never rel="nofollow").
+const DISCOGS_CREDIT = "Data provided by Discogs";
+const DISCOGS_HOME = "https://www.discogs.com/";
+const releasePage = (id) => `https://www.discogs.com/release/${id}`;
+const discogsCredit = (href) => h("p", { class: "discogs-credit" },
+  h("a", { href: href || DISCOGS_HOME, target: "_blank", rel: "noopener" }, DISCOGS_CREDIT));
+// A row's own link to its release page, for lists that mix many releases.
+const releaseLink = (id) => h("a", {
+  class: "btn small quiet release-link", href: releasePage(id), target: "_blank", rel: "noopener",
+  title: `${DISCOGS_CREDIT}: open release ${id} on discogs.com`, "aria-label": `${DISCOGS_CREDIT}: release ${id} on discogs.com`,
+  onclick: (e) => e.stopPropagation(),
+}, "↗");
+// The discogs.com search page for a search made here: the field names match Discogs'
+// own search form.
+function searchPage(text, by) {
+  const q = new URLSearchParams({ type: "release" });
+  q.set(by, text);
+  if ($("#find-vinyl").checked) q.set("format_exact", "Vinyl");
+  return `https://www.discogs.com/search/?${q}`;
+}
+
 // A placeholder so the bench is never blank; shown faded until a record is loaded.
 const SAMPLE = {
   artist: "Some Artist",
@@ -319,7 +341,7 @@ async function search(text, by) {
   try {
     const data = await api(`/api/discogs/search?${params}`);
     const n = data.pagination?.items ?? data.results.length;
-    S.results = { title: `${plural(n, "match")} for “${text}”`, rows: data.results, error: "" };
+    S.results = { title: `${plural(n, "match")} for “${text}”`, rows: data.results, error: "", page: searchPage(text, by) };
   } catch (err) {
     S.results = { title: "", rows: [], error: err.message, needsToken: err.status === 401 };
   }
@@ -369,7 +391,10 @@ function resultsView() {
     return [emptyState(r.title || "Find a record",
       r.title ? "" : "Paste a release or master link, type a release id, or search by catalogue number, barcode, label or artist.")];
   }
-  return [h("div", { class: "list-head hint" }, r.title), ...r.rows.map((row) => releaseRow(row))];
+  // A search links to the same search on discogs.com; looked-up releases to the newest one,
+  // which is also the one in the editor (with its own link).
+  const page = r.page || (r.rows.length ? releasePage(r.rows[0].id) : "");
+  return [h("div", { class: "list-head hint" }, r.title), ...r.rows.map((row) => releaseRow(row)), discogsCredit(page)];
 }
 
 function collectionView() {
@@ -397,7 +422,8 @@ function collectionView() {
     h("button", { class: "btn small", type: "button", disabled: (pg.page || 1) <= 1, onclick: () => { c.page -= 1; c.data = null; renderLeft(); } }, "Previous"),
     h("span", { class: "hint" }, `Page ${pg.page || 1} of ${pg.pages || 1}`),
     h("button", { class: "btn small", type: "button", disabled: (pg.page || 1) >= (pg.pages || 1), onclick: () => { c.page += 1; c.data = null; renderLeft(); } }, "Next"));
-  return [head, ...c.data.items.map((row) => releaseRow(row)), pager];
+  const page = S.discogs.username ? `https://www.discogs.com/user/${enc(S.discogs.username)}/collection` : "";
+  return [head, ...c.data.items.map((row) => releaseRow(row)), pager, discogsCredit(page)];
 }
 
 async function loadCollection() {
@@ -498,6 +524,7 @@ function crateView() {
       h("span", { class: "t3", style: "display:block" }, [item.catno, item.year, item.data ? "edited" : ""].filter(Boolean).join(", "))),
     h("span", { class: "side" },
       h("span", { class: "printed-dot", "data-on": String(item.printed), title: item.printed ? "Has a printed label" : "No label yet" }),
+      releaseLink(item.release_id),
       h("button", { class: "btn small quiet", type: "button", title: "Take it out of this crate", "aria-label": `Take ${item.title} out`, onclick: (e) => { e.stopPropagation(); removeFromCrate(item); } }, "×")));
     row.addEventListener("dragstart", (e) => { S.dragId = item.id; row.classList.add("dragging"); e.dataTransfer.effectAllowed = "move"; });
     row.addEventListener("dragend", () => row.classList.remove("dragging"));
@@ -506,7 +533,8 @@ function crateView() {
     row.addEventListener("drop", (e) => { e.preventDefault(); row.classList.remove("drop-before"); moveCrateRecord(S.dragId, item.id); });
     return row;
   });
-  return [head, actions, ...rows];
+  const open = c.records.find((r) => r.id === S.current?.origin?.recordId) || c.records[0];
+  return [head, actions, ...rows, discogsCredit(releasePage(open.release_id))];
 }
 
 function refreshCrateCount() {
@@ -893,7 +921,9 @@ function renderEditorHead() {
   }, crateChoices());
   head.replaceChildren(
     h("h2", {}, d.title || "Untitled"),
-    h("span", { class: "meta" }, meta, r?.url ? [" ", h("a", { href: r.url, target: "_blank", rel: "noopener" }, "Discogs page")] : null),
+    h("span", { class: "meta" }, meta, d.release_id
+      ? [" · ", h("a", { href: r?.url || releasePage(d.release_id), target: "_blank", rel: "noopener" }, DISCOGS_CREDIT)]
+      : null),
     h("div", { class: "editor-actions" },
       isDirty() ? h("button", { class: "btn small", type: "button", onclick: revertEdits }, "Undo edits") : null,
       S.current.origin.kind === "crate"
@@ -1597,6 +1627,8 @@ async function loadHistory() {
   } catch (_) { return; }
   $("#labels-printed").textContent = S.labelsPrinted ? `${S.labelsPrinted} so far` : "";
   $("#history").replaceChildren(...(S.history.length ? S.history.map(historyItem) : [h("li", { class: "hint", style: "display:block" }, "Labels you print are kept here for reprinting.")]));
+  const fromDiscogs = S.history.find((e) => e.release_id);
+  $("#history-credit").replaceChildren(...(fromDiscogs ? [discogsCredit(releasePage(fromDiscogs.release_id))] : []));
 }
 
 function historyItem(e) {
@@ -1606,7 +1638,8 @@ function historyItem(e) {
     h("button", { class: "open what", type: "button", title: "Open in the editor", onclick: () => openHistory(e) },
       h("b", {}, [e.artist, e.title].filter(Boolean).join(" – ") || "Label"),
       h("span", {}, `${[e.catno, tpl ? tpl.name : e.template].filter(Boolean).join(", ")}, ${e.copies > 1 ? `${e.copies}×, ` : ""}${relTime(e.printed_at)}`)),
-    h("div", { class: "acts" }, h("button", { class: "btn small quiet", type: "button", onclick: () => reprint(e) }, "Reprint")));
+    h("div", { class: "acts" }, e.release_id ? releaseLink(e.release_id) : null,
+      h("button", { class: "btn small quiet", type: "button", onclick: () => reprint(e) }, "Reprint")));
 }
 
 async function openHistory(e) {
@@ -1897,7 +1930,7 @@ function renderSettingsPage() {
     status.className = `status-line ${d.token_set ? "ok" : ""}`;
     status.textContent = d.token_set
       ? `Token ${d.source === "env" ? "from the DISCOGS_TOKEN environment variable" : "in the Keychain"}${d.username ? `, signed in as ${d.username}` : ", not tested yet"}.`
-      : "No token yet. Discogs needs one for lookups from 1 December 2026.";
+      : "No token yet. crate-labels needs one to look anything up on Discogs.";
   }
   $("#prefer-anv").checked = Boolean(S.settings["discogs.prefer_anv"]);
   $("#theme-select").value = document.documentElement.dataset.theme || "auto";

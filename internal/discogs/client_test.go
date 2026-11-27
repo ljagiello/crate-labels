@@ -142,26 +142,43 @@ func TestRequestsBurstThenArePacedAndCarryTokenAndUA(t *testing.T) {
 		if got := r.Header.Get("Authorization"); got != "Discogs token="+testToken {
 			t.Errorf("Authorization = %q", got)
 		}
-		if got := r.Header.Get("User-Agent"); got != "crate-labels/0.1" {
+		if got := r.Header.Get("User-Agent"); got != DefaultUserAgent {
 			t.Errorf("User-Agent = %q", got)
+		}
+		if got := r.Header.Get("Accept"); got != MediaType {
+			t.Errorf("Accept = %q", got)
 		}
 	}
 }
 
-func TestNoTokenSendsNoAuthorizationHeaderAndPacesSlower(t *testing.T) {
+// Discogs rejects unauthenticated calls from 1 December 2026, so without a token nothing
+// is sent at all: not even a cached answer is used.
+func TestNoTokenNeverCallsDiscogs(t *testing.T) {
 	clock := newFakeClock()
 	rec := &recorder{}
 	c := newTestClient(clock, "", rec, okJSON)
-	for id := range int64(4) {
-		if _, err := c.Release(ctx, id+5, false); err != nil {
-			t.Fatal(err)
+	c.Cache = &memCache{rows: map[string][]byte{APIBase + "/releases/5": []byte(`{"id": 5}`)}}
+	for _, call := range []func() error{
+		func() error { _, err := c.Release(ctx, 5, false); return err },
+		func() error { _, err := c.Master(ctx, 6, false); return err },
+		func() error { _, err := c.Search(ctx, SearchParams{Query: "kf039"}); return err },
+		func() error { _, err := c.Identity(ctx); return err },
+	} {
+		err := call()
+		var de *Error
+		if !errors.As(err, &de) || de.Status != http.StatusUnauthorized || de.Upstream != 0 ||
+			!strings.Contains(de.Msg, "needs your personal access token") {
+			t.Fatalf("err = %#v", err)
+		}
+		if IsRejected(err) {
+			t.Fatal("a missing token reported as rejected by Discogs")
 		}
 	}
-	if _, ok := rec.all()[0].Header["Authorization"]; ok {
-		t.Fatal("Authorization sent without a token")
+	if n := len(rec.all()); n != 0 {
+		t.Fatalf("%d requests sent without a token", n)
 	}
-	if s := clock.Sleeps(); len(s) != 1 || s[0] != interval(AnonymousPerMinute) {
-		t.Fatalf("sleeps = %v, want [%v]", s, interval(AnonymousPerMinute))
+	if s := clock.Sleeps(); len(s) != 0 {
+		t.Fatalf("sleeps = %v", s)
 	}
 }
 
@@ -334,7 +351,7 @@ func TestIdentityIsNotCachedAndErrorsExplain(t *testing.T) {
 }
 
 func TestTransportErrorIs502(t *testing.T) {
-	c := NewClient(nil, errTransport{})
+	c := NewClient(func(context.Context) string { return testToken }, errTransport{})
 	c.Limiter = nil
 	_, err := c.Release(ctx, 1, false)
 	var de *Error
@@ -713,14 +730,14 @@ func TestCheckTokenSendsTheCandidateAndNeverRetries(t *testing.T) {
 	rec := &recorder{}
 	c := newTestClient(newFakeClock(), testToken, rec, func(r *http.Request) *http.Response {
 		if r.Header.Get("Authorization") == "Discogs token="+candidate {
-			return respond(200, `{"id": 1, "username": "lcf"}`)
+			return respond(200, `{"id": 1, "username": "testuser"}`)
 		}
 		return respond(401, `{"message": "nope"}`)
 	})
 	called := 0
 	c.OnUnauthorized = func(context.Context) { called++ }
 	id, err := c.CheckToken(ctx, candidate)
-	if err != nil || id.Username != "lcf" {
+	if err != nil || id.Username != "testuser" {
 		t.Fatalf("check = %+v, %v", id, err)
 	}
 	_, err = c.CheckToken(ctx, strings.Repeat("X", 40))

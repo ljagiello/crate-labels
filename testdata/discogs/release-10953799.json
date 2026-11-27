@@ -13,7 +13,7 @@
    "tracks": "",
    "id": 5785051,
    "resource_url": "https://api.discogs.com/artists/5785051",
-   "thumbnail_url": "https://i.discogs.com/vob-QND2pnOFOycUMcdTbiQk3uraENQHgWxBzVh2I4U/rs:fit/g:sm/q:90/h:600/w:474/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU3ODUw/NTEtMTQ5NjI0OTc2/MC01NDA3LmpwZWc.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/1.jpeg"
   }
  ],
  "artists_sort": "Paul Bradley (10)",
@@ -25,7 +25,7 @@
    "entity_type_name": "Label",
    "id": 10128,
    "resource_url": "https://api.discogs.com/labels/10128",
-   "thumbnail_url": "https://i.discogs.com/q_2QsklWEppZhsYV_Y2owi57Wd352zeKq-rzbORGctM/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTEwMTI4/LTE1MTYzODY0Njct/ODY1Ni5qcGVn.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/2.jpeg"
   }
  ],
  "series": [],
@@ -37,7 +37,7 @@
    "entity_type_name": "Copyright (c)",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-10953799/3.jpeg"
   }
  ],
  "formats": [
@@ -51,35 +51,9 @@
   }
  ],
  "data_quality": "Correct",
- "community": {
-  "have": 41,
-  "want": 16,
-  "rating": {
-   "count": 3,
-   "average": 5.0
-  },
-  "submitter": {
-   "username": "osaris",
-   "resource_url": "https://api.discogs.com/users/osaris"
-  },
-  "contributors": [
-   {
-    "username": "osaris",
-    "resource_url": "https://api.discogs.com/users/osaris"
-   },
-   {
-    "username": "thermostat",
-    "resource_url": "https://api.discogs.com/users/thermostat"
-   }
-  ],
-  "data_quality": "Correct",
-  "status": "Accepted"
- },
  "format_quantity": 1,
  "date_added": "2017-10-04T07:34:56-07:00",
  "date_changed": "2020-03-26T04:29:18-07:00",
- "num_for_sale": 0,
- "lowest_price": null,
  "title": "A-Class Speed",
  "country": null,
  "released": "2017-10-00",
@@ -156,23 +130,21 @@
  "images": [
   {
    "type": "primary",
-   "uri": "https://i.discogs.com/LWktiWSDtuy9gzbTwaC4aczRWoVFI64AHZXvRT77uEE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtOTgyNC5qcGVn.jpeg",
-   "resource_url": "https://i.discogs.com/LWktiWSDtuy9gzbTwaC4aczRWoVFI64AHZXvRT77uEE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtOTgyNC5qcGVn.jpeg",
-   "uri150": "https://i.discogs.com/qxhketUzkYWe0iSJtuUq0iLNmGUK-CbbgNdhi5no6EQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtOTgyNC5qcGVn.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-10953799/4.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-10953799/5.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-10953799/6.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/5es_i-FOi6PZCDVuAWiaclmhQ-UX6QE5Fvkj-Xaiszc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtNzI3NC5qcGVn.jpeg",
-   "resource_url": "https://i.discogs.com/5es_i-FOi6PZCDVuAWiaclmhQ-UX6QE5Fvkj-Xaiszc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtNzI3NC5qcGVn.jpeg",
-   "uri150": "https://i.discogs.com/LOXNhCFxJ76o5O8Vo8GYv2FECcOapO-1gqBtGa8YoNI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtNzI3NC5qcGVn.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-10953799/7.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-10953799/8.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-10953799/9.jpeg",
    "width": 600,
    "height": 600
   }
  ],
- "thumb": "https://i.discogs.com/qxhketUzkYWe0iSJtuUq0iLNmGUK-CbbgNdhi5no6EQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUz/Nzk5LTE1MDcxMjc5/ODAtOTgyNC5qcGVn.jpeg",
- "estimated_weight": 85,
- "blocked_from_sale": false,
+ "thumb": "https://i.discogs.com/fixture/release-10953799/10.jpeg",
  "is_offensive": false
 }

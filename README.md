@@ -71,6 +71,20 @@ crate-labels discogs token set     # kept in the macOS Keychain, never in a file
 
 A `DISCOGS_TOKEN` environment variable works too, and wins over the Keychain.
 
+Without a token crate-labels sends nothing to Discogs: lookups, search and the collection
+ask for one instead.
+
+This application uses Discogs’ API but is not affiliated with, sponsored or endorsed by
+Discogs. ‘Discogs’ is a trademark of Zink Media, LLC.
+
+Use of the API is governed by the [Discogs API Terms of Use](https://support.discogs.com/hc/en-us/articles/360009334593-API-Terms-of-Use).
+To stay within them, crate-labels:
+
+- authenticates every request with your own token, and keeps to Discogs' rate limit;
+- keeps Discogs answers and cover images for six hours at most, then asks again;
+- shows "Data provided by Discogs", linked to the page on discogs.com, next to the data it
+  shows.
+
 ## What it does
 
 - **Find the record.** Paste a Discogs release or master link (or just the release id)

@@ -207,12 +207,14 @@ On every Discogs call the token comes from `DISCOGS_TOKEN` if that is set, else 
 
 ## Discogs
 
-These endpoints call `https://api.discogs.com` with a `crate-labels/…` User-Agent and,
-when there is a token, `Authorization: Discogs token=<token>`. That header is only ever sent to
-api.discogs.com.
+These endpoints call `https://api.discogs.com` with a `crate-labels/<version>` User-Agent,
+`Accept: application/vnd.discogs.v2.discogs+json` and `Authorization: Discogs token=<token>`.
+That header is only ever sent to api.discogs.com. Without a token nothing is sent: Discogs
+rejects unauthenticated calls from 1 December 2026, so every endpoint below replies 401
+("Discogs needs your personal access token for …") straight away.
 
-- **Pacing.** Requests go through a token bucket sized from Discogs' published limits: 60
-  requests a minute with a token, 25 without, over a moving 60 s window. The bucket holds 3
+- **Pacing.** Requests go through a token bucket sized from Discogs' published limit of 60
+  requests a minute with a token, over a moving 60 s window. The bucket holds 3
   requests and refills at (limit − 3) per minute, so no 60 s window sees more than the
   limit. If Discogs sends `X-Discogs-Ratelimit`, that value replaces the published one.
 - `X-Discogs-Ratelimit-Remaining` can only lower the budget: at most Remaining − 1 more
@@ -224,10 +226,11 @@ api.discogs.com.
   most twice and waits out at most 20 s of holds in total; after that it replies 429
   ("try again in N s").
 - **Cache.** Response bodies are cached in SQLite under the full URL (query sorted, token
-  left out). Releases and masters keep for 30 days, searches and master versions for an hour,
-  collection pages, folders and the wantlist for 5 minutes, and identity checks are never
-  cached. A cached answer does not wait for the pacing. `refresh=true` skips the cache.
-- **Errors** become 401 (Discogs said 401 or 403), 404, 429 or 502 (anything else), with
+  left out). Releases and masters keep for 6 hours, the most the Discogs API Terms of Use
+  allow; searches and master versions keep for an hour, collection pages, folders and the
+  wantlist for 5 minutes, and identity checks are never cached. A cached answer does not wait
+  for the pacing. `refresh=true` skips the cache.
+- **Errors** become 401 (no token, or Discogs said 401 or 403), 404, 429 or 502 (anything else), with
   messages such as "Discogs needs your personal access token for search. Add it in Settings."
 
 `GET /api/discogs/lookup?q=<text>&refresh=<bool>` →
@@ -274,9 +277,9 @@ type CollectionItem = { id: number /* the release id */; instance_id: number; fo
 
 `GET /api/discogs/image?url=<url>` proxies a Discogs image so the UI can show thumbnails: it
 replies with the image bytes, the upstream `Content-Type` and
-`Cache-Control: private, max-age=604800`. Only `https` URLs on a `*.discogs.com` host other
+`Cache-Control: private, no-cache` (the SQLite copy below is the only cache). Only `https` URLs on a `*.discogs.com` host other
 than api.discogs.com are fetched (anything else is 502), never with the token, and the bytes
-are cached in SQLite.
+are cached in SQLite for 6 hours.
 
 ## Templates, models, stocks
 

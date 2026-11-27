@@ -95,10 +95,10 @@ func TestSettingsRoundTripAndReopen(t *testing.T) {
 
 func TestDiscogsAccountHoldsNoSecret(t *testing.T) {
 	s := open(t)
-	check(t, s.SetDiscogsAccount(ctx, "lcf", "keychain:crate-labels.discogs/personal-access-token"))
+	check(t, s.SetDiscogsAccount(ctx, "testuser", "keychain:crate-labels.discogs/personal-access-token"))
 	user, ref, ok, err := s.DiscogsAccount(ctx)
 	check(t, err)
-	if !ok || user != "lcf" || ref != "keychain:crate-labels.discogs/personal-access-token" {
+	if !ok || user != "testuser" || ref != "keychain:crate-labels.discogs/personal-access-token" {
 		t.Fatalf("account = %q %q %v", user, ref, ok)
 	}
 	check(t, s.ClearDiscogsAccount(ctx))
@@ -174,6 +174,18 @@ func TestResponseCacheTTLAndImages(t *testing.T) {
 	check(t, err)
 	if !ok || ct != "image/jpeg" || !reflect.DeepEqual(img, []byte{0xff, 0xd8}) {
 		t.Fatalf("image = %q %v %v", ct, img, ok)
+	}
+	// Images expire on read too, not only when Prune runs.
+	now = now.Add(s.ImageMaxAge + time.Second)
+	if _, _, ok, _ := s.ImageGet(ctx, "https://i.discogs.com/a.jpeg"); ok {
+		t.Fatal("image older than ImageMaxAge returned")
+	}
+}
+
+func TestDiscogsCachesKeepSixHoursAtMost(t *testing.T) {
+	s := open(t)
+	if s.CacheMaxAge > 6*time.Hour || s.ImageMaxAge > 6*time.Hour {
+		t.Fatalf("CacheMaxAge %v, ImageMaxAge %v: Discogs data may be kept six hours at most", s.CacheMaxAge, s.ImageMaxAge)
 	}
 }
 

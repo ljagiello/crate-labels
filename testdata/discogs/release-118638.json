@@ -13,7 +13,7 @@
    "tracks": "",
    "id": 45587,
    "resource_url": "https://api.discogs.com/artists/45587",
-   "thumbnail_url": "https://i.discogs.com/WmltSjRDRGJwXQRcAUnWcW9pUK6-7p2or2fO2szslVY/rs:fit/g:sm/q:90/h:422/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ1NTg3/LTE2NjQ0ODY2MDQt/NTY0My5qcGVn.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/1.jpeg"
   }
  ],
  "artists_sort": "DJ Force & The Evolution",
@@ -25,7 +25,7 @@
    "entity_type_name": "Label",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/2.jpeg"
   }
  ],
  "series": [],
@@ -37,7 +37,7 @@
    "entity_type_name": "Copyright (c)",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/3.jpeg"
   },
   {
    "name": "Kniteforce Publishing",
@@ -54,7 +54,7 @@
    "entity_type_name": "Distributed By",
    "id": 10182,
    "resource_url": "https://api.discogs.com/labels/10182",
-   "thumbnail_url": "https://i.discogs.com/VC5K6GoMvs41KeZ1SCO9aDOl3TGWATELsOjAivO7_3U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTEwMTgy/LTE3MDE1MjEzNDkt/NTUxMy5qcGVn.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-118638/4.jpeg"
   }
  ],
  "formats": [
@@ -68,75 +68,9 @@
   }
  ],
  "data_quality": "Correct",
- "community": {
-  "have": 469,
-  "want": 132,
-  "rating": {
-   "count": 58,
-   "average": 4.0
-  },
-  "submitter": {
-   "username": "matt_bassline",
-   "resource_url": "https://api.discogs.com/users/matt_bassline"
-  },
-  "contributors": [
-   {
-    "username": "matt_bassline",
-    "resource_url": "https://api.discogs.com/users/matt_bassline"
-   },
-   {
-    "username": "SirTweak",
-    "resource_url": "https://api.discogs.com/users/SirTweak"
-   },
-   {
-    "username": "djvirus",
-    "resource_url": "https://api.discogs.com/users/djvirus"
-   },
-   {
-    "username": "raindance.rob.mp3",
-    "resource_url": "https://api.discogs.com/users/raindance.rob.mp3"
-   },
-   {
-    "username": "Narkee",
-    "resource_url": "https://api.discogs.com/users/Narkee"
-   },
-   {
-    "username": "raindance_rob",
-    "resource_url": "https://api.discogs.com/users/raindance_rob"
-   },
-   {
-    "username": "sjcee",
-    "resource_url": "https://api.discogs.com/users/sjcee"
-   },
-   {
-    "username": "rav1ngmad",
-    "resource_url": "https://api.discogs.com/users/rav1ngmad"
-   },
-   {
-    "username": "steve_brown",
-    "resource_url": "https://api.discogs.com/users/steve_brown"
-   },
-   {
-    "username": "hr123",
-    "resource_url": "https://api.discogs.com/users/hr123"
-   },
-   {
-    "username": "ian_s",
-    "resource_url": "https://api.discogs.com/users/ian_s"
-   },
-   {
-    "username": "Adyton",
-    "resource_url": "https://api.discogs.com/users/Adyton"
-   }
-  ],
-  "data_quality": "Correct",
-  "status": "Accepted"
- },
  "format_quantity": 1,
  "date_added": "2003-03-05T12:25:04-08:00",
  "date_changed": "2016-07-14T03:58:58-07:00",
- "num_for_sale": 8,
- "lowest_price": 6.58,
  "master_id": 4589,
  "master_url": "https://api.discogs.com/masters/4589",
  "title": "Simply Electric / Out Of Control",
@@ -213,39 +147,37 @@
  "images": [
   {
    "type": "primary",
-   "uri": "https://i.discogs.com/UeY44bx6-BBPTUXRUmX7itj9UXH1PGh52hxMl4SPRHg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMzg5ODE3ODQ3/LTI1ODUuanBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/UeY44bx6-BBPTUXRUmX7itj9UXH1PGh52hxMl4SPRHg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMzg5ODE3ODQ3/LTI1ODUuanBlZw.jpeg",
-   "uri150": "https://i.discogs.com/oJ9sbyPTzsLfGJ0b2SSepWwupNlMyJczlPHWvHwqNA4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMzg5ODE3ODQ3/LTI1ODUuanBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-118638/5.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/6.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/7.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/DoT-IrSIGzan-BDyOr3AA9DpQKnJDieGXauh0P8IrAk/rs:fit/g:sm/q:90/h:359/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMjMxMjY0OTgy/LmpwZWc.jpeg",
-   "resource_url": "https://i.discogs.com/DoT-IrSIGzan-BDyOr3AA9DpQKnJDieGXauh0P8IrAk/rs:fit/g:sm/q:90/h:359/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMjMxMjY0OTgy/LmpwZWc.jpeg",
-   "uri150": "https://i.discogs.com/lbZUzKu56ap5qyXE2Vh3EneNLA60FrGiHeFUyhpcib4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMjMxMjY0OTgy/LmpwZWc.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-118638/8.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/9.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/10.jpeg",
    "width": 365,
    "height": 359
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/i1-s9Xk9o5NKN9otmRRzNfNpHpjryY7QFVjaVR1pavk/rs:fit/g:sm/q:90/h:363/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMTg4/LmpwZWc.jpeg",
-   "resource_url": "https://i.discogs.com/i1-s9Xk9o5NKN9otmRRzNfNpHpjryY7QFVjaVR1pavk/rs:fit/g:sm/q:90/h:363/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMTg4/LmpwZWc.jpeg",
-   "uri150": "https://i.discogs.com/pWurCD8tbY_fXZimlouOdKB-AH9eL3Fjex2bORrAb5w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMTg4/LmpwZWc.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-118638/11.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/12.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/13.jpeg",
    "width": 365,
    "height": 363
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/uGHNwGB6t9VvAHgexbhUxQh_Y7zi_-DsWc4GNrUH20o/rs:fit/g:sm/q:90/h:369/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMjA2/LmpwZWc.jpeg",
-   "resource_url": "https://i.discogs.com/uGHNwGB6t9VvAHgexbhUxQh_Y7zi_-DsWc4GNrUH20o/rs:fit/g:sm/q:90/h:369/w:365/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMjA2/LmpwZWc.jpeg",
-   "uri150": "https://i.discogs.com/vf7pjqp4OSkqr6jQ_iYOyU67H9s01uC8LtdpFkGECr8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMTM4MDQyMjA2/LmpwZWc.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-118638/14.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-118638/15.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-118638/16.jpeg",
    "width": 365,
    "height": 369
   }
  ],
- "thumb": "https://i.discogs.com/oJ9sbyPTzsLfGJ0b2SSepWwupNlMyJczlPHWvHwqNA4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODYz/OC0xMzg5ODE3ODQ3/LTI1ODUuanBlZw.jpeg",
- "estimated_weight": 230,
- "blocked_from_sale": false,
+ "thumb": "https://i.discogs.com/fixture/release-118638/17.jpeg",
  "is_offensive": false
 }

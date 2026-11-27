@@ -404,7 +404,7 @@ func TestLookupSearchCollection(t *testing.T) {
 	}
 	img := e.do(t, "GET", "/api/discogs/image?url="+urlEscape("https://i.discogs.com/abc.jpeg"), nil)
 	if img.status != 200 || img.header.Get("Content-Type") != "image/jpeg" ||
-		img.header.Get("Cache-Control") != "private, max-age=604800" {
+		img.header.Get("Cache-Control") != "private, no-cache" {
 		t.Fatalf("image = %d %v", img.status, img.header)
 	}
 	for _, r := range e.Stub.All() {

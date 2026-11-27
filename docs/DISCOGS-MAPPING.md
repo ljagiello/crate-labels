@@ -4,7 +4,9 @@ This is how crate-labels turns one Discogs release into the `LabelData` a templa
 (the JSON form is in [API.md](API.md)). The input is a `GET https://api.discogs.com/releases/{id}`
 response. The code is `discogs.Map` in `internal/discogs/mapping.go` and `summary.go`.
 
-The recorded inputs in `testdata/discogs/` are public Discogs data, fetched without a token:
+The recorded inputs in `testdata/discogs/` are real Discogs responses cut down to their CC0
+release data: community and marketplace fields are removed and image URLs are placeholders
+(see NOTICE):
 `release-118638.json`, `release-89569.json`, `release-10550772.json`, `release-10953799.json`
 and `master-4589.json`.
 

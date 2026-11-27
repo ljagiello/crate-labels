@@ -54,12 +54,15 @@ Discogs data (testdata/discogs/)
 ===============================================================================
 
 The test fixtures are recorded responses from the Discogs API
-(https://www.discogs.com/developers). Discogs publishes its release data under
-CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). The
-fixtures contain image URLs but no images.
+(https://www.discogs.com/developers), cut down to the release data that the
+Discogs API Terms of Use make available under CC0 1.0 Universal
+(https://creativecommons.org/publicdomain/zero/1.0/): titles, credits, formats,
+track lists, identifiers and links. The Restricted Data was removed: usernames
+and other community data, marketplace data, and image URLs, which are replaced
+by placeholders.
 
-crate-labels uses the Discogs API but is not affiliated with or endorsed by
-Discogs.
+This application uses Discogs’ API but is not affiliated with, sponsored or
+endorsed by Discogs. ‘Discogs’ is a trademark of Zink Media, LLC.
 
 ===============================================================================
 Go modules in release binaries

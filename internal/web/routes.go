@@ -357,7 +357,9 @@ func (s *Server) image(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Content-Type", ct)
-	w.Header().Set("Cache-Control", "private, max-age=604800")
+	// The server-side cache already holds images for up to six hours (discogs.MaxContentAge),
+	// so the browser keeps none of its own: a cached copy could outlive that limit.
+	w.Header().Set("Cache-Control", "private, no-cache")
 	w.Header().Set("Content-Length", strconv.Itoa(len(body)))
 	_, _ = w.Write(body)
 }

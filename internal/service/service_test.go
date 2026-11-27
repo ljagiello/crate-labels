@@ -869,7 +869,7 @@ func TestSetTokenChecksWithDiscogsBeforeSaving(t *testing.T) {
 		if r.Header.Get("Authorization") == "Discogs token="+bad {
 			return 401, `{"message": "Invalid consumer token."}`
 		}
-		return 200, `{"id": 1, "username": "lcf"}`
+		return 200, `{"id": 1, "username": "testuser"}`
 	}}
 	// Rejected: nothing stored, and the error says so.
 	_, err := e.Service.SetToken(ctx, bad)
@@ -881,7 +881,7 @@ func TestSetTokenChecksWithDiscogsBeforeSaving(t *testing.T) {
 	}
 	// Accepted: stored, with the account.
 	st, err := e.Service.SetToken(ctx, good)
-	if err != nil || st.Warning != "" || st.Username == nil || *st.Username != "lcf" {
+	if err != nil || st.Warning != "" || st.Username == nil || *st.Username != "testuser" {
 		t.Fatalf("good token = %+v, %v", st, err)
 	}
 	if got, _ := e.Tokens.Get(ctx); got != good {
@@ -901,5 +901,12 @@ func TestSetTokenChecksWithDiscogsBeforeSaving(t *testing.T) {
 		if r.URL.Path == "/oauth/identity" && r.Header.Get("Authorization") == "Discogs token="+old {
 			t.Fatal("the check sent the old token")
 		}
+	}
+}
+
+func TestDiscogsUserAgentCarriesVersion(t *testing.T) {
+	e := servicetest.New(t)
+	if got, want := e.Service.Discogs.UserAgent, "crate-labels/"+service.Version; got != want {
+		t.Fatalf("User-Agent = %q, want %q", got, want)
 	}
 }

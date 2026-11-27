@@ -16,12 +16,19 @@ import (
 	"time"
 )
 
-// API endpoints and client identity.
+// API endpoints.
 const (
-	APIBase   = "https://api.discogs.com"
-	APIHost   = "api.discogs.com"
-	UserAgent = "crate-labels/0.1"
+	APIBase = "https://api.discogs.com"
+	APIHost = "api.discogs.com"
 )
+
+// DefaultUserAgent identifies builds that never set Client.UserAgent (tests, `go run`).
+const DefaultUserAgent = "crate-labels/dev"
+
+// MediaType asks for Discogs' v2 JSON with notes in Discogs markup, the format Map reads.
+// It is also what Discogs sends when no Accept header is given; naming it keeps the
+// format fixed if that default ever changes.
+const MediaType = "application/vnd.discogs.v2.discogs+json"
 
 // Whole-request timeouts. API answers are small JSON documents; 20 s allows for a slow
 // link without leaving the UI hanging. Covers can be several megabytes, so they get 45 s.
@@ -34,10 +41,16 @@ const (
 // up with a 429 of its own (the hold still applies to later calls).
 const DefaultPatience = 20 * time.Second
 
-// Cache lifetimes per endpoint (docs/API.md "Discogs"). Identity is never cached.
+// MaxContentAge is the longest crate-labels keeps or shows a Discogs answer or image. The
+// Discogs API Terms of Use bar showing data more than six hours older than discogs.com,
+// and storing it longer than the app needs.
+const MaxContentAge = 6 * time.Hour
+
+// Cache lifetimes per endpoint (docs/API.md "Discogs"), none above MaxContentAge.
+// Identity is never cached.
 const (
-	TTLRelease    = 30 * 24 * time.Hour
-	TTLMaster     = 30 * 24 * time.Hour
+	TTLRelease    = MaxContentAge
+	TTLMaster     = MaxContentAge
 	TTLSearch     = time.Hour
 	TTLCollection = 5 * time.Minute
 )
@@ -90,7 +103,8 @@ func (c *Client) tokenFor(ctx context.Context) string {
 // Client calls api.discogs.com. Build it with NewClient; the exported fields may be
 // changed before first use.
 type Client struct {
-	Token      func(ctx context.Context) string // "" = no token
+	Token      func(ctx context.Context) string // "" = no token: every API call fails with 401
+	UserAgent  string                           // sent on every request; see DefaultUserAgent
 	Cache      Cache                            // nil = no response cache
 	Images     ImageCache                       // nil = no image cache
 	Limiter    *Limiter                         // nil = no pacing (tests)
@@ -121,7 +135,7 @@ func NewClient(token func(ctx context.Context) string, transport http.RoundTripp
 	if token == nil {
 		token = func(context.Context) string { return "" }
 	}
-	c := &Client{Token: token, Limiter: NewLimiter(), MaxRetries: 2, Patience: DefaultPatience,
+	c := &Client{Token: token, UserAgent: DefaultUserAgent, Limiter: NewLimiter(), MaxRetries: 2, Patience: DefaultPatience,
 		Log: slog.Default(), remaining: -1, MaxBodyBytes: DefaultMaxBodyBytes, MaxImageBytes: DefaultMaxImageBytes}
 	c.api = &http.Client{
 		Transport: transport,
@@ -245,6 +259,12 @@ func apiURL(path string, params url.Values) string {
 // GetJSON fetches path from api.discogs.com through the cache and the gate and returns
 // the raw body. ttl 0 disables caching; refresh skips the cache read.
 func (c *Client) GetJSON(ctx context.Context, path string, params url.Values, what string, ttl time.Duration, refresh bool) ([]byte, error) {
+	// Discogs rejects unauthenticated API calls from 1 December 2026, so a call without a
+	// token is answered here and never reaches Discogs (nor the cache).
+	if c.tokenFor(ctx) == "" {
+		return nil, &Error{Status: http.StatusUnauthorized,
+			Msg: fmt.Sprintf("Discogs needs your personal access token for %s. Add it in Settings.", what)}
+	}
 	key := apiURL(path, params)
 	if ttl > 0 && !refresh && c.Cache != nil {
 		if body, ok, err := c.Cache.CacheGet(ctx, key, ttl); err == nil && ok {
@@ -316,8 +336,8 @@ func (c *Client) once(ctx context.Context, rawURL string) (status int, header ht
 	if err != nil {
 		return 0, nil, nil, "", err
 	}
-	req.Header.Set("User-Agent", UserAgent)
-	req.Header.Set("Accept", "application/json")
+	req.Header.Set("User-Agent", c.UserAgent)
+	req.Header.Set("Accept", MediaType)
 	if req.URL.Scheme == "https" && req.URL.Host == APIHost {
 		if token := c.tokenFor(ctx); token != "" {
 			req.Header.Set("Authorization", "Discogs token="+token)
@@ -556,7 +576,7 @@ func (c *Client) FetchImage(ctx context.Context, rawURL string) (contentType str
 	if err != nil {
 		return "", nil, &Error{Status: 502, Msg: "Only Discogs image URLs can be fetched."}
 	}
-	req.Header.Set("User-Agent", UserAgent)
+	req.Header.Set("User-Agent", c.UserAgent)
 	resp, err := c.web.Do(req)
 	if err != nil {
 		if ctx.Err() != nil {

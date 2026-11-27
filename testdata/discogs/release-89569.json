@@ -24,7 +24,7 @@
    "entity_type_name": "Label",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/1.jpeg"
   },
   {
    "name": "Remix Records",
@@ -33,7 +33,7 @@
    "entity_type_name": "Label",
    "id": 4343,
    "resource_url": "https://api.discogs.com/labels/4343",
-   "thumbnail_url": "https://i.discogs.com/IXVASqRzWc4E_a38auRUdvZ4JGroS0gs46fEuxL3Zjk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTQzNDMt/MTE1OTIyMjI1My5q/cGVn.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/2.jpeg"
   }
  ],
  "series": [
@@ -44,7 +44,7 @@
    "entity_type_name": "Series",
    "id": 33815,
    "resource_url": "https://api.discogs.com/labels/33815",
-   "thumbnail_url": "https://i.discogs.com/eTzzg4NU8wxoW1IS80GBt9sB45JZGIDCJlsIsdQxbXw/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzODE1/LTExMDU4Mjg5ODgu/anBn.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/3.jpeg"
   }
  ],
  "companies": [
@@ -55,7 +55,7 @@
    "entity_type_name": "Published By",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/4.jpeg"
   },
   {
    "name": "Kniteforce Records",
@@ -64,7 +64,7 @@
    "entity_type_name": "Copyright (c)",
    "id": 3345,
    "resource_url": "https://api.discogs.com/labels/3345",
-   "thumbnail_url": "https://i.discogs.com/dJAn8XDrmyRmEsebon-j6uWJwx-sx9mgksZBze4ELDU/rs:fit/g:sm/q:90/h:354/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMzNDUt/MDAxLmdpZg.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/5.jpeg"
   },
   {
    "name": "Porky's Mastering",
@@ -73,7 +73,7 @@
    "entity_type_name": "Lacquer Cut At",
    "id": 268038,
    "resource_url": "https://api.discogs.com/labels/268038",
-   "thumbnail_url": "https://i.discogs.com/N4B2hlYULKIPn7SV7PVOY91N1YhDGi8qQV4joEn6g8g/rs:fit/g:sm/q:90/h:319/w:319/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI2ODAz/OC0xNTEzNDQ2NDAy/LTExMTMuanBlZw.jpeg"
+   "thumbnail_url": "https://i.discogs.com/fixture/release-89569/6.jpeg"
   }
  ],
  "formats": [
@@ -87,67 +87,9 @@
   }
  ],
  "data_quality": "Needs Vote",
- "community": {
-  "have": 329,
-  "want": 265,
-  "rating": {
-   "count": 50,
-   "average": 4.5
-  },
-  "submitter": {
-   "username": "Xylum_Larvik",
-   "resource_url": "https://api.discogs.com/users/Xylum_Larvik"
-  },
-  "contributors": [
-   {
-    "username": "Xylum_Larvik",
-    "resource_url": "https://api.discogs.com/users/Xylum_Larvik"
-   },
-   {
-    "username": "SirTweak",
-    "resource_url": "https://api.discogs.com/users/SirTweak"
-   },
-   {
-    "username": "raindance_rob",
-    "resource_url": "https://api.discogs.com/users/raindance_rob"
-   },
-   {
-    "username": "sjcee",
-    "resource_url": "https://api.discogs.com/users/sjcee"
-   },
-   {
-    "username": "Gabbahead",
-    "resource_url": "https://api.discogs.com/users/Gabbahead"
-   },
-   {
-    "username": "DiscogsUpdateBot",
-    "resource_url": "https://api.discogs.com/users/DiscogsUpdateBot"
-   },
-   {
-    "username": "Adyton",
-    "resource_url": "https://api.discogs.com/users/Adyton"
-   },
-   {
-    "username": "BOMBBOUTIQUE",
-    "resource_url": "https://api.discogs.com/users/BOMBBOUTIQUE"
-   },
-   {
-    "username": "djsamination",
-    "resource_url": "https://api.discogs.com/users/djsamination"
-   },
-   {
-    "username": "vinylmaddy",
-    "resource_url": "https://api.discogs.com/users/vinylmaddy"
-   }
-  ],
-  "data_quality": "Needs Vote",
-  "status": "Accepted"
- },
  "format_quantity": 3,
  "date_added": "2003-01-04T16:04:21-08:00",
  "date_changed": "2023-02-22T12:28:17-08:00",
- "num_for_sale": 6,
- "lowest_price": 9.09,
  "master_id": 3488,
  "master_url": "https://api.discogs.com/masters/3488",
  "title": "The Future Sound Of Hardcore",
@@ -563,87 +505,85 @@
  "images": [
   {
    "type": "primary",
-   "uri": "https://i.discogs.com/fjgOEWqgFTesn7pm4adTpRtLOhwohGKMooM_RUrJCeY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNjku/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/fjgOEWqgFTesn7pm4adTpRtLOhwohGKMooM_RUrJCeY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNjku/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/4Ae2yN1J6_E7ZfqKRDZC2mr4quw_d2CbcF_X-hQhy8E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNjku/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/7.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/8.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/9.jpeg",
    "width": 600,
    "height": 595
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/ix4UJo_21UY2itmoQ5hDEVxWuNYx_CwosbD5UEXgi8c/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyODAu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/ix4UJo_21UY2itmoQ5hDEVxWuNYx_CwosbD5UEXgi8c/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyODAu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/X9DvDKfgvcG34QLhkRr_yeWoDNAGq5PPZB2hA5UtssQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyODAu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/10.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/11.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/12.jpeg",
    "width": 600,
    "height": 596
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/UXnsp3gONAs7qoc_E0vJXOEyMDQbjjDbh1_aE7D2M1g/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyOTAu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/UXnsp3gONAs7qoc_E0vJXOEyMDQbjjDbh1_aE7D2M1g/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyOTAu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/W_oiYM7XSvKbYfhoGCU0NWzjhbYiA0nc8LdNODHnGZE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyOTAu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/13.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/14.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/15.jpeg",
    "width": 600,
    "height": 593
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/T5v0lwOBz7x2FrD-KB0vUYnVVbgG8pKYlhSAfAurO84/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMDgu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/T5v0lwOBz7x2FrD-KB0vUYnVVbgG8pKYlhSAfAurO84/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMDgu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/_2fPe3KNAhPeYDmVVWb9D8z9GvF8Ym-DARNP8UTSW9Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMDgu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/16.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/17.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/18.jpeg",
    "width": 600,
    "height": 594
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/G_Lc9Gz6iMJml3vp5F4mPKX4MuxGz_VDTEnjyxSmCMQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMDgu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/G_Lc9Gz6iMJml3vp5F4mPKX4MuxGz_VDTEnjyxSmCMQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMDgu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/2SRzTy4DX-wyVpkCGD_nTK9-gkp7bRIP5xpvpyslSuk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMDgu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/19.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/20.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/21.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/mrnmGD-JRO_3IVgEbFJUrsmiYzKNMX7eBUxAEQe_uBQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMTgu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/mrnmGD-JRO_3IVgEbFJUrsmiYzKNMX7eBUxAEQe_uBQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMTgu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/IjDyAtb8Y4y97lxdEQGRR8oYIMcZwzS4QxFAxXu-CWk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMTgu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/22.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/23.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/24.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/zEAltOUscn4OzaSZwQRY5i-nkHBOT2Kn70gZOYfIvsU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMzIu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/zEAltOUscn4OzaSZwQRY5i-nkHBOT2Kn70gZOYfIvsU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMzIu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/kVVN7MICZPa_G9QXTcusuP4xMCuSpK7wGdHGj5q1QBo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzMzIu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/25.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/26.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/27.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/NP9BfGUupqGd8-ao97-PzscRgHKwdf5PS3xzcCJS9K0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMzgu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/NP9BfGUupqGd8-ao97-PzscRgHKwdf5PS3xzcCJS9K0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMzgu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/KeA2dV5FTJIfpII5NYz3618h7XyLIfhnmOqXRDH37SM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyMzgu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/28.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/29.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/30.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/-9-XOJgVryVxN2B_C-5xzI4yLtGYZbflxv0CSk32bkw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNDgu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/-9-XOJgVryVxN2B_C-5xzI4yLtGYZbflxv0CSk32bkw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNDgu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/MSqPXAK_mOD0InLInAl-M0wNbLeNVJWH6VjlLUbSpcM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNDgu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/31.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/32.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/33.jpeg",
    "width": 600,
    "height": 600
   },
   {
    "type": "secondary",
-   "uri": "https://i.discogs.com/TVLJRQsNKqmUeMKbnnnNacBHvhHin33_YHBuaQltzgw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzNjIu/anBlZw.jpeg",
-   "resource_url": "https://i.discogs.com/TVLJRQsNKqmUeMKbnnnNacBHvhHin33_YHBuaQltzgw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzNjIu/anBlZw.jpeg",
-   "uri150": "https://i.discogs.com/C7KGGOH71VyXbF4FQEtqpMdJ4-yrvO8H0HUi7nFXeiU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUzNjIu/anBlZw.jpeg",
+   "uri": "https://i.discogs.com/fixture/release-89569/34.jpeg",
+   "resource_url": "https://i.discogs.com/fixture/release-89569/35.jpeg",
+   "uri150": "https://i.discogs.com/fixture/release-89569/36.jpeg",
    "width": 600,
    "height": 600
   }
  ],
- "thumb": "https://i.discogs.com/4Ae2yN1J6_E7ZfqKRDZC2mr4quw_d2CbcF_X-hQhy8E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NTY5/LTEyNjY3NDUyNjku/anBlZw.jpeg",
- "estimated_weight": 690,
- "blocked_from_sale": false,
+ "thumb": "https://i.discogs.com/fixture/release-89569/37.jpeg",
  "is_offensive": false
 }

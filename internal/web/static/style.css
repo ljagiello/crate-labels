@@ -246,6 +246,8 @@ input[type="checkbox"] { accent-color: var(--magenta); width: 16px; height: 16px
 .list-head select { width: auto; flex: 1; min-height: 28px; font-size: 13px; }
 .list-head input[type="text"] { width: auto; flex: 1; min-width: 0; min-height: 28px; }
 .list-empty { padding: 18px 10px; color: var(--muted); font-size: 14px; }
+.discogs-credit { padding: 10px 6px 0; font-size: 12px; color: var(--faint); }
+.discogs-credit a { color: inherit; }
 .list-empty strong { color: var(--text); display: block; margin-bottom: 3px; }
 
 .row {
